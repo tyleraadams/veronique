@@ -1,0 +1,74 @@
+<head>
+  <title>Verodalla</title>
+  <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  {{> landing}}
+  {{> nav}}
+  {{> main_gallery}}
+  {{> footer}}
+</body>
+
+<template name="landing">
+	<div class="splash-cover"></div>
+	<img src="../images/studio.JPG" class="splash"/>
+	<img src="../images/Logo-Verodalla-Noir.png" class="sign"/>
+</template>
+
+<template name="nav">
+  	<nav>
+    	<div class="logo"> </div>
+    	<div class="social_media"><a href="http://twitter.com/verodalla">
+        	<div class="twitter"></div></a><a href="http://facebook.com/verodalla">
+        	<div class="facebook"></div></a><a href="http://instagram.com/verodalla">
+        	<div class="instagram"></div></a>
+    	</div>
+	 </nav>
+</template>
+
+<template name="main_gallery">
+	  	<div class="main_gallery">
+
+	  	{{#each grabGalleries}}
+	  		<a><div class='gallery_item' data-name="{{name}}" style="background:url({{cover_photo}}) no-repeat center center; width:200px; height:200px; background-size:cover">{{name}}</div> </a>
+  		<!-- <a href="/inner_journey"><div class="gallery_item inner_journey">{{>information}}</div></a>
+  		<a href="/livinlulu"><div class="gallery_item livinlulu">{{>information}}</div></a>
+  		<a href="/poppies"><div class="gallery_item poppies">{{>information}}</div></a>
+      	<a href="/about"><div class="gallery_item about">{{>information}}</div></a>
+      	<a href="/exhibits"><div class="gallery_item exhibits">{{>information}}</div></a>
+     	<a href="/press"><div class="gallery_item press">{{>information}}</div></a> -->
+     	{{/each}}
+	</div>
+
+  {{#if isSectionOpen}}
+    {{> section_gallery}}
+  {{/if}}
+</template>
+
+<template name="section_gallery">
+	<h1>{{grabTitle}}</h1>
+  {{grabDesc}}
+	<div class="container">
+		{{#each grabPhotos}}	
+			<div class="section-photo" style="background:url('{{this}}') no-repeat center center; width:175px; height:175px; background-size:cover;"></div>
+		{{/each}}
+	</div>
+
+</template>
+
+<template name="footer">
+	<div id="footer">
+		<p>Verodalla &copy;</p>
+		<p>All rights reserved</p>
+		<p>Made in New York by <a href="http://tyleraadams.com">Tyler Adams</a></p>
+	</div>
+</template>
+
+
+<template name="information">
+	<div class="cover">
+		{{info}}
+	</div>
+</template>
+
