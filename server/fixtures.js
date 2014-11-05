@@ -64,11 +64,226 @@
 // 	Galleries.insert(galleries[gallery]);
 // }
 
+// var photoDefault = function(path, obj) {
+	 
+// 	this.name= typeof obj !== 'undefined' ? obj.name : null;
+// 	this.materials= typeof obj !== 'undefined' ? obj.materials :  null;
+// 	this.dimensions = typeof obj !== 'undefined' ? obj.dimensions : null;
+// 	this.year = typeof obj !== 'undefined' ? obj.year : null;
+// 	this.path = path;
+// };
+// var photoList = ['images/about/Copie de VERO NOIRBLA.jpg','images/about/LivenLulu & personnage 6.jpg','images/about/P6050021.JPG','images/about/P6050093.JPG','images/about/P6050220.JPG','images/about/P6050342bis.jpg','images/exhibit/1 Me and Them Deeper/DSC_5633.JPG','images/exhibit/1 Me and Them Deeper/DSC_5644.JPG','images/exhibit/1 Me and Them Deeper/DSC_5648.JPG','images/exhibit/1 Me and Them Deeper/DSC_5656.JPG','images/exhibit/1 Me and Them Deeper/DSC_5659.JPG','images/exhibit/1 Me and Them Deeper/DSC_5754.JPG','images/exhibit/1 Me and Them Deeper/DSC_5760.JPG','images/exhibit/1 Me and Them Deeper/DSC_5765.JPG','images/exhibit/1 Me and Them Deeper/DSC_5798.JPG','images/exhibit/1 Me and Them Deeper/DSC_5840.JPG','images/exhibit/1 Me and Them Deeper/DSC_5848.JPG','images/exhibit/1 Me and Them Deeper/DSC_5869.JPG','images/exhibit/1 Me and Them Deeper/DSC_5887.JPG','images/exhibit/1 Me and Them Deeper/DSC_5898.JPG','images/exhibit/1 Me and Them Deeper/DSC_5904.JPG','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3200.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3208.jpg', 'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3210.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3222.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3225.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3226.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3228.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3251.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3277.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3286.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3303.jpg','images/livenlulu/3AR-42-US.2.jpg','images/livenlulu/3LLL-A20-US.2.jpg','images/livenlulu/3LLL-A23-US.2.jpg','images/livenlulu/3LLL-A26B-US.2.jpg','images/livenlulu/3LLL-A44S.2.jpg','images/livenlulu/3LLL-A50S.2.jpg','images/livenlulu/3LLL-A53S.2.jpg','images/livenlulu/3LLL-A60-US.2.jpg','images/livenlulu/3LLL-A61-US.2.jpg','images/livenlulu/3LLL-AR37-US.2.jpg','images/livenlulu/3LLL-AR37-US.jpg','images/livenlulu/3LLL-AR37B-US.jpg','images/livenlulu/3LLL-AR39-US.jpg','images/livenlulu/3LLL-AR53S.2.jpg','images/livenlulu/3LLL-AR53S.jpg','images/livenlulu/3LLL-AR55S.jpg','images/livenlulu/3LLL-AR60US.2.jpg','images/livenlulu/3LLL-AR61US.2.jpg','images/livenlulu/3LLL-AR62US.jpg','images/livenlulu/3LLL-AR64US.A.jpg','images/livenlulu/3LLL-AR69US.2.jpg','images/livenlulu/3LLL-AR69US.jpg','images/livenlulu/3LLL-AR70US.jpg','images/livenlulu/3LLL-AR71US.2.jpg','images/livenlulu/3LLL-CCD12.jpg','images/livenlulu/3LLL-CCD22S.2.jpg','images/livenlulu/3LLL-CCD24.2.jpg','images/livenlulu/3LLL-CPLE10-US.jpg','images/livenlulu/3LLL-CPLE11.2.jpg','images/livenlulu/3LLL-CPLE12-S.2.jpg','images/livenlulu/3LLL-CPLE12-S.jpg','images/livenlulu/3LLL-CPLE20-US.2.jpg','images/livenlulu/3LLL-CPLE8-US.2jpg','images/livenlulu/3LLL-EXT4-US.B.2.jpg','images/livenlulu/3LLL-EXT5-US.B.2.jpg','images/livenlulu/3LLL-EXT6-US.A.2.jpg','images/livenlulu/3LLL-EXT8-US.B.2.jpg','images/livenlulu/3LLL-V18-US.jpg','images/livenlulu/3LLL-V6B-US.jpg','images/livenlulu/3LLL-V8B-US.jpg','images/livenlulu/3LLLAR59US.2a.jpg','images/livenlulu/3LLLAR59US.B.jpg','images/livenlulu/3LLLAR80US.2.jpg','images/livenlulu/3LLLCCD28US.2.jpg','images/livenlulu/DSC09269.jpg','images/livenlulu/DSC09276.2.jpg','images/livenlulu/DSC09282.2.jpg','images/livenlulu/DSC09308.2.jpg','images/livenlulu/DSC09314.2.jpg','images/livenlulu/DSC09326.2.jpg','images/livenlulu/IMAG0673.2.jpg','images/livenlulu/LivenLulu-&-personnage-2.jpg','images/livenlulu/LivenLulu-&-personnage-3.jpg','images/livenlulu/LivenLulu-&-personnage-4B-3.jpg','images/livenlulu/LivenLulu-&-personnage-5.jpg','images/livenlulu/LivenLulu-16.jpg','images/livenlulu/LivenLulu-18.jpg','images/livenlulu/LivenLulu-19.jpg','images/livenlulu/LivenLulu-20.jpg','images/livenlulu/LivenLulu-21.jpg','images/livenlulu/LivenLulu-22.jpg','images/livenlulu/LivenLulu-23.jpg','images/livenlulu/LivenLulu-24.b.jpg','images/livenlulu/LivenLulu-24.jpg','images/livenlulu/LivenLulu-25.jpg','images/livenlulu/LivenLulu-27.jpg','images/livenlulu/LivenLulu-28.jpg','images/livenlulu/LivenLulu-8.jpg','images/livenlulu/Univers-Atelier-Liv-30C107.jpg','images/livenlulu/Univers-LivenLulu-1-2.jpg','images/livenlulu/Univers-LivenLulu-4.jpg','images/livenlulu/Univers-LivenLulu-5.jpg','images/livenlulu/Univers-LivenLulu-8.jpg','images/livenlulu/Univers-LivenLulu-9B.jpg','images/livenlulu/Univers-dortoir-LivenLulu.jpg','images/press/Dijon Mag.jpg','images/press/France Bleue Borurgogne.jpg','images/press/French Morning.png','images/press/High End.jpg','images/press/Land of .jpg','images/press/Le Point NY.jpg','images/press/Le bien public.jpg','images/press/NBC4NewYork.jpg','images/press/TV Net Bourgogne.jpg','images/press/Ubifrance.jpg','images/press/cmaurice.jpg','images/press/le-journal-de-saone-et-loire.jpg','images/press/logo-Observateur-Avesnois.gif','images/press/logo-VoixduNord.png','images/press/logo-jdp-bourgogne.jpg','images/press/shani_camillemaurice.jpg'];
 
-// var photoList = ['images/about/Copie de VERO NOIRBLA.jpg','images/about/LivenLulu & personnage 6.jpg','images/about/P6050021.JPG','images/about/P6050093.JPG','images/about/P6050220.JPG','images/about/P6050342bis.jpg','images/exhibit/1 Me and Them Deeper/DSC_5633.JPG','images/exhibit/1 Me and Them Deeper/DSC_5644.JPG','images/exhibit/1 Me and Them Deeper/DSC_5648.JPG','images/exhibit/1 Me and Them Deeper/DSC_5656.JPG','images/exhibit/1 Me and Them Deeper/DSC_5659.JPG','images/exhibit/1 Me and Them Deeper/DSC_5754.JPG','images/exhibit/1 Me and Them Deeper/DSC_5760.JPG','images/exhibit/1 Me and Them Deeper/DSC_5765.JPG','images/exhibit/1 Me and Them Deeper/DSC_5798.JPG','images/exhibit/1 Me and Them Deeper/DSC_5840.JPG','images/exhibit/1 Me and Them Deeper/DSC_5848.JPG','images/exhibit/1 Me and Them Deeper/DSC_5869.JPG','images/exhibit/1 Me and Them Deeper/DSC_5887.JPG','images/exhibit/1 Me and Them Deeper/DSC_5898.JPG','images/exhibit/1 Me and Them Deeper/DSC_5904.JPG','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3200.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3208.jpg', 'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3210.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3222.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3225.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3226.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3228.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3251.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3277.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3286.jpg','images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3303.jpg','images/inner_journey/IJ 1.JPG','images/inner_journey/IJ 10.jpg','images/inner_journey/IJ 11.jpg','images/inner_journey/IJ 12.jpg','images/inner_journey/IJ 14.jpg','images/inner_journey/IJ 2.jpg','images/inner_journey/IJ 3.JPG','images/inner_journey/IJ 4.jpg','images/inner_journey/IJ 5.jpg','images/inner_journey/IJ 6.jpg','images/inner_journey/IJ 7.jpg','images/inner_journey/IJ 8.jpg','images/inner_journey/IJ 9.jpg','images/livenlulu/3AR-42-US.2.jpg','images/livenlulu/3LLL-A20-US.2.jpg','images/livenlulu/3LLL-A23-US.2.jpg','images/livenlulu/3LLL-A26B-US.2.jpg','images/livenlulu/3LLL-A44S.2.jpg','images/livenlulu/3LLL-A50S.2.jpg','images/livenlulu/3LLL-A53S.2.jpg','images/livenlulu/3LLL-A60-US.2.jpg','images/livenlulu/3LLL-A61-US.2.jpg','images/livenlulu/3LLL-AR37-US.2.jpg','images/livenlulu/3LLL-AR37-US.jpg','images/livenlulu/3LLL-AR37B-US.jpg','images/livenlulu/3LLL-AR39-US.jpg','images/livenlulu/3LLL-AR53S.2.jpg','images/livenlulu/3LLL-AR53S.jpg','images/livenlulu/3LLL-AR55S.jpg','images/livenlulu/3LLL-AR60US.2.jpg','images/livenlulu/3LLL-AR61US.2.jpg','images/livenlulu/3LLL-AR62US.jpg','images/livenlulu/3LLL-AR64US.A.jpg','images/livenlulu/3LLL-AR69US.2.jpg','images/livenlulu/3LLL-AR69US.jpg','images/livenlulu/3LLL-AR70US.jpg','images/livenlulu/3LLL-AR71US.2.jpg','images/livenlulu/3LLL-CCD12.jpg','images/livenlulu/3LLL-CCD22S.2.jpg','images/livenlulu/3LLL-CCD24.2.jpg','images/livenlulu/3LLL-CPLE10-US.jpg','images/livenlulu/3LLL-CPLE11.2.jpg','images/livenlulu/3LLL-CPLE12-S.2.jpg','images/livenlulu/3LLL-CPLE12-S.jpg','images/livenlulu/3LLL-CPLE20-US.2.jpg','images/livenlulu/3LLL-CPLE8-US.2jpg','images/livenlulu/3LLL-EXT4-US.B.2.jpg','images/livenlulu/3LLL-EXT5-US.B.2.jpg','images/livenlulu/3LLL-EXT6-US.A.2.jpg','images/livenlulu/3LLL-EXT8-US.B.2.jpg','images/livenlulu/3LLL-V18-US.jpg','images/livenlulu/3LLL-V6B-US.jpg','images/livenlulu/3LLL-V8B-US.jpg','images/livenlulu/3LLLAR59US.2a.jpg','images/livenlulu/3LLLAR59US.B.jpg','images/livenlulu/3LLLAR80US.2.jpg','images/livenlulu/3LLLCCD28US.2.jpg','images/livenlulu/DSC09269.jpg','images/livenlulu/DSC09276.2.jpg','images/livenlulu/DSC09282.2.jpg','images/livenlulu/DSC09308.2.jpg','images/livenlulu/DSC09314.2.jpg','images/livenlulu/DSC09326.2.jpg','images/livenlulu/IMAG0673.2.jpg','images/livenlulu/LivenLulu-&-personnage-2.jpg','images/livenlulu/LivenLulu-&-personnage-3.jpg','images/livenlulu/LivenLulu-&-personnage-4B-3.jpg','images/livenlulu/LivenLulu-&-personnage-5.jpg','images/livenlulu/LivenLulu-16.jpg','images/livenlulu/LivenLulu-18.jpg','images/livenlulu/LivenLulu-19.jpg','images/livenlulu/LivenLulu-20.jpg','images/livenlulu/LivenLulu-21.jpg','images/livenlulu/LivenLulu-22.jpg','images/livenlulu/LivenLulu-23.jpg','images/livenlulu/LivenLulu-24.b.jpg','images/livenlulu/LivenLulu-24.jpg','images/livenlulu/LivenLulu-25.jpg','images/livenlulu/LivenLulu-27.jpg','images/livenlulu/LivenLulu-28.jpg','images/livenlulu/LivenLulu-8.jpg','images/livenlulu/Univers-Atelier-Liv-30C107.jpg','images/livenlulu/Univers-LivenLulu-1-2.jpg','images/livenlulu/Univers-LivenLulu-4.jpg','images/livenlulu/Univers-LivenLulu-5.jpg','images/livenlulu/Univers-LivenLulu-8.jpg','images/livenlulu/Univers-LivenLulu-9B.jpg','images/livenlulu/Univers-dortoir-LivenLulu.jpg','images/poppies/Coquelicot au vent blanc.jpg','images/poppies/Coquelicot au vent rouge.JPG','images/poppies/Coquelicots au vent.jpg','images/poppies/Coquelicots en blé.jpg','images/poppies/Detail coquelicot au vent rouge.JPG','images/poppies/Detail coquelicots au vent argent.jpg','images/poppies/Installation Poppies.jpg','images/poppies/Nuage de Coquelicots.JPG','images/poppies/Nuance de Coquelicots.JPG','images/poppies/Vent en Coquelicots.jpg','images/poppies/detail coquelicot au vent blanc.JPG','images/press/Dijon Mag.jpg','images/press/France Bleue Borurgogne.jpg','images/press/French Morning.png','images/press/High End.jpg','images/press/Land of .jpg','images/press/Le Point NY.jpg','images/press/Le bien public.jpg','images/press/NBC4NewYork.jpg','images/press/TV Net Bourgogne.jpg','images/press/Ubifrance.jpg','images/press/cmaurice.jpg','images/press/le-journal-de-saone-et-loire.jpg','images/press/logo-Observateur-Avesnois.gif','images/press/logo-VoixduNord.png','images/press/logo-jdp-bourgogne.jpg','images/press/shani_camillemaurice.jpg'];
+
+
+
+// //,',,,,,,,,,,
+// var paintingsDetails = [{
+// name: "Coquelicots au Vent Blanc",
+// materials: "Mineral paste, metal, acrylic and mixed media",
+// dimensions: '63"x31"x35"',
+// year: '2009',
+// path:'images/poppies/Coquelicot au vent blanc.jpg'
+// },
+
+// {
+// name: "Coquelicots au Vent Rouge",
+// materials: 'Mineral paste, metal, acrylic and mixed media',
+// dimensions:'63"x31"x35"',
+// year:'2009',
+// path:'images/poppies/Coquelicot au vent rouge.JPG'
+// },
+
+// {
+// name: "Coquelicots au Vent Rouge",
+// materials: 'Mineral paste, metal, acrylic and mixed media',
+// dimensions:'63"x31"x35"',
+// year:'2009',
+// path:'images/poppies/Coquelicots au vent.jpg'
+// }, //not sure about this one
+
+// {
+// name: "Coquelicots en Blé",
+// materials: 'Mineral paste and acrylic on canvas',
+// dimensions:'15"x15"',
+// year: '2008',
+// path:'images/poppies/Coquelicots en blé.jpg'
+// },
+
+// {
+// name: 'Details de Coquelicots au Vent Blanc',
+// materials: 'Mineral paste, metal, acrylic and mixed media',
+// path:'images/poppies/detail coquelicot au vent blanc.JPG'
+// },
+
+// {
+// name: 'Details de Coquelicots au Vent Rouge',
+// materials: 'Mineral paste, metal, acrylic and mixed media',
+// path:'images/poppies/Detail coquelicot au vent rouge.JPG'
+// },
+
+// {
+// name: 'Details de Coquelicots au Vent Argent',
+// materials: 'Mineral paste, metal, acrylic and mixed media',
+// path:'images/poppies/Detail coquelicots au vent argent.jpg'
+// },
+
+// {
+// name: 'Customised Poppies Triptych',
+// dimensions:'Three paintings 98"x39"',
+// materials: 'Mineral paste, wood and acrylic',
+// year:'2009',
+// path:'images/poppies/Installation Poppies.jpg'
+// },
+
+// {
+// name: "Nuage de Coquelicots",
+// materials: 'Mineral paste and acrylic on canvas',
+// dimensions:'39"x70"',
+// year: '2008',
+// path:'images/poppies/Nuage de Coquelicots.JPG'
+// },
+
+// {
+// name: "Nuance de Coquelicots",
+// materials: 'Mineral paste and acrylic on canvas',
+// dimensions:'39"x39"',
+// year: '2008',
+// path:'images/poppies/Nuance de Coquelicots.JPG'
+// },
+
+// {
+// name: "Vent en Coquelicots",
+// materials: 'Mineral paste and acrylic on canvas',
+// dimensions:'Triptych 15"x15", 15"x11", 15"x15"',
+// year: '2008',
+// path:'images/poppies/Vent en Coquelicots.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº14",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'54" x 64"',
+// year: '2014',
+// path:'images/inner_journey/IJ 14.jpg'
+// },
+
+
+
+// {
+// name: "Inner Journey Nº12",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'49" x 64"',
+// year: '2014',
+// path:'images/inner_journey/IJ 12.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº11",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'45" x 52"',
+// year: '2014',
+// path:'images/inner_journey/IJ 11.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº10",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'42" x 47"',
+// year: '2014',
+// path:'images/inner_journey/IJ 10.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº9",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'Triptych 3 x 55" x 19"',
+// year: '2012',
+// path:'images/inner_journey/IJ 9.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº8",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'Diptych 2 x 39" x 27"',
+// year:'2011 - sold',
+// path:'images/inner_journey/IJ 8.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº7",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'15" x 15"',
+// year:'2011',
+// path:'images/inner_journey/IJ 7.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº6",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'15" x 15"',
+// year:'2011',
+// path:'images/inner_journey/IJ 6.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº5",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'15" x 15"',
+// year:'2011 – Sold',
+// path:'images/inner_journey/IJ 5.jpg'
+// },
+
+
+// {
+// name: "Inner Journey Nº4",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'Triptych 3 x 39"x 12"',
+// year:'2011',
+// path:'images/inner_journey/IJ 4.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº3",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'39" x 19’',
+// year:'2011 - sold',
+// path:'images/inner_journey/IJ 3.JPG'
+// },
+
+// {
+// name: "Inner Journey Nº2",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'15" x 47"',
+// year:'2011 - sold',
+// path:'images/inner_journey/IJ 2.jpg'
+// },
+
+// {
+// name: "Inner Journey Nº1",
+// materials: 'Mineral paste, wood and acrylic',
+// dimensions:'39" x 39"',
+// year:'2010 - sold',
+// path:'images/inner_journey/IJ 1.JPG'
+// }];
+
 
 // for (var path in photoList) {
-// 	var name = photoList[path].match(/images\/(\w+)/)[1]
-// 	Galleries.update({cover_photo: {$regex: name}}, {$push:{images: photoList[path]}});
+// 		var name = photoList[path].match(/images\/(\w+)/)[1]
 	
+		
+
+// 		var photo =  new photoDefault(photoList[path]);
+	
+// 		Galleries.update({cover_photo: {$regex: name}}, {$push:{photos: photo}});
+			
+	
+	
+	
+// }
+
+// for (var detail in paintingsDetails) {
+// 	var name = paintingsDetails[detail].path.match(/images\/(\w+)/)[1];
+// 	var photo =  new photoDefault(paintingsDetails[detail].path, paintingsDetails[detail]);
+// 	Galleries.update({cover_photo: {$regex: name}}, {$push:{photos: photo}});
 // }

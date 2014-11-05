@@ -1,46 +1,42 @@
 
 Template.section_gallery.helpers({
   grabPhotos: function (e) {
-    return Session.get('section').images;
+    return Session.get('sectionObj').photos;
   },
 
   grabTitle: function () {
-    return Session.get('section').name;
+    return Session.get('sectionObj').name;
   },
 
   grabDesc: function() {
-    return Session.get('section').desc;
+    return Session.get('sectionObj').desc;
   }
 });
 
 Template.section_gallery.rendered = function() {
-  var section = Session.get('section');
-  Meteor.call('getSectionPhotos', section, function(err, result){
-      if(err) throw err;
-      console.log('this is the result of server call ' + result);
-      Session.set('section', result);
-    });
+  // $('#footer').css('bottom', -height);
+
+  $('.section-photo .cover').css('width', '170px');
+  $('.section-photo .cover').css('height', '170px');
+  $('.section-photo .cover').css('font-size', '0.5em');
+  $('.section-photo .cover>p').css('top', '10px');
 }
 
 Template.section_gallery.events({
   'click a': function(e) {  
-    Session.set("section", $(e.target).attr('data-name'));
+    
   },
 
-  'mouseover a': function(e) {
+ 'mouseover .section-photo': function(e) {
     var cover = $(e.target).find('.cover');
     $(cover).css('display', 'inherit');
 
-    var text = $(e.target).attr('class').replace('gallery_item', '');
-    if(text === 'cover') {
-      text =  $(e.target).parents.attr('class').replace('gallery_item', '');
-    }
-    $('.cover').text(text);
-  },
-
-  'mouseout a': function(e){
-    $('.cover').css('display', 'none');
+    $(cover).mouseout(function(){
+      $('.cover').css('display', 'none');
+    });
   }
+
+
 });
 
 

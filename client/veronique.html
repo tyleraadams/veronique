@@ -7,7 +7,7 @@
   {{> landing}}
   {{> nav}}
   {{> main_gallery}}
-  {{> footer}}
+  
 </body>
 
 <template name="landing">
@@ -31,44 +31,68 @@
 	  	<div class="main_gallery">
 
 	  	{{#each grabGalleries}}
-	  		<a><div class='gallery_item' data-name="{{name}}" style="background:url({{cover_photo}}) no-repeat center center; width:200px; height:200px; background-size:cover">{{name}}</div> </a>
-  		<!-- <a href="/inner_journey"><div class="gallery_item inner_journey">{{>information}}</div></a>
-  		<a href="/livinlulu"><div class="gallery_item livinlulu">{{>information}}</div></a>
-  		<a href="/poppies"><div class="gallery_item poppies">{{>information}}</div></a>
-      	<a href="/about"><div class="gallery_item about">{{>information}}</div></a>
-      	<a href="/exhibits"><div class="gallery_item exhibits">{{>information}}</div></a>
-     	<a href="/press"><div class="gallery_item press">{{>information}}</div></a> -->
+         {{#if style}}
+	  		<a><div class='gallery_item' data-name="{{name}}" style="{{style}}">{{>info}}</div> </a>
+
+        {{else}}
+         <a><div class='gallery_item' data-name="{{name}}" style="background:url({{cover_photo}}) no-repeat center center; width:200px; height:200px; background-size:cover">{{>info}}</div> </a>
+         {{/if}}
+
      	{{/each}}
 	</div>
 
   {{#if isSectionOpen}}
     {{> section_gallery}}
+  {{else}}
+    {{> footer}}
   {{/if}}
 </template>
 
 <template name="section_gallery">
-	<h1>{{grabTitle}}</h1>
-  {{grabDesc}}
-	<div class="container">
+
+  <div class="section_container">
+	<h1 class="section_title">«{{grabTitle}}»</h1>
+  <div class='desc'>{{{grabDesc}}}</div>
+	<div class="sub-gallery">
 		{{#each grabPhotos}}	
-			<div class="section-photo" style="background:url('{{this}}') no-repeat center center; width:175px; height:175px; background-size:cover;"></div>
+			<div class="section-photo" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;">{{>info}}</div>
 		{{/each}}
 	</div>
+  </div>
 
+{{> footer}}
 </template>
 
 <template name="footer">
-	<div id="footer">
+	<!-- <div id="footer">
 		<p>Verodalla &copy;</p>
 		<p>All rights reserved</p>
 		<p>Made in New York by <a href="http://tyleraadams.com">Tyler Adams</a></p>
+	 </div>-->
+</template>
+
+
+<template name="info">
+	<div class="cover">
+    {{#if name}}
+    <p>{{name}}</p>
+    {{/if}}    
+    {{#if materials}}
+    <p>{{materials}}</p>
+    {{/if}}  
+    {{#if dimensions}}
+    <p>{{dimensions}}</p>
+    {{/if}}    
+    {{#if year}}
+		<p>{{year}}</p>
+    {{/if}}
 	</div>
 </template>
 
 
-<template name="information">
-	<div class="cover">
-		{{info}}
-	</div>
+<template name="modal">
+  <div id="modal">
+    <img src="{{path}}">
+  </div>
 </template>
 
