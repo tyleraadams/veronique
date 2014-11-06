@@ -19,11 +19,20 @@
 <template name="nav">
   	<nav>
     	<div class="logo"> </div>
-    	<div class="social_media"><a href="http://twitter.com/verodalla">
-        	<div class="twitter"></div></a><a href="http://facebook.com/verodalla">
-        	<div class="facebook"></div></a><a href="http://instagram.com/verodalla">
-        	<div class="instagram"></div></a>
+    	<div class="social_media">
+        <a href="http://twitter.com/verodalla">
+        	<div class="twitter"></div></a>
+          <a href="http://facebook.com/verodalla">
+        	<div class="facebook"></div></a>
+          <a href="http://instagram.com/verodalla">
+          <div class="instagram"></div></a>          
+          <a>
+        	<div class="contact"></div></a>
     	</div>
+
+      {{#if isContactOpen}}
+        {{>contact}}
+      {{/if}}
 	 </nav>
 </template>
 
@@ -49,18 +58,21 @@
 </template>
 
 <template name="section_gallery">
-
+{{#if isPhotoSelected}}
+{{> modal}}
+{{/if}}
+{{> footer}}
   <div class="section_container">
 	<h1 class="section_title">«{{grabTitle}}»</h1>
   <div class='desc'>{{{grabDesc}}}</div>
 	<div class="sub-gallery">
 		{{#each grabPhotos}}	
-			<div class="section-photo" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;">{{>info}}</div>
+			<div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;">{{>info}}</div>
 		{{/each}}
 	</div>
   </div>
 
-{{> footer}}
+
 </template>
 
 <template name="footer">
@@ -92,7 +104,20 @@
 
 <template name="modal">
   <div id="modal">
-    <img src="{{path}}">
+  <button class="closeModal">x</button>
+   <div class="selected-photo" data-path="{{this.path}}" style="background:url('{{getSelectedPhoto}}') no-repeat center center; background-size:contain;">{{> info}}</div>
+  </div>
+</template>
+
+
+<template name="contact">
+  <div class="contact_container">
+  <form id="contact">
+    <input type="text" id="name" name="name" placeholder="Name">
+    <input type="text" id="email" name="email" placeholder="Email">
+    <textarea id="msg" name="msg" placeholder="Your Message" rows='10'></textarea>
+    <input type="submit">
+  </form>
   </div>
 </template>
 

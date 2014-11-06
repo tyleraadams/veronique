@@ -10,6 +10,10 @@ Template.section_gallery.helpers({
 
   grabDesc: function() {
     return Session.get('sectionObj').desc;
+  },
+
+  isPhotoSelected: function() {
+    return Session.get('photoSelected');
   }
 });
 
@@ -20,11 +24,12 @@ Template.section_gallery.rendered = function() {
   $('.section-photo .cover').css('height', '170px');
   $('.section-photo .cover').css('font-size', '0.5em');
   $('.section-photo .cover>p').css('top', '10px');
+  Session.set('photoSelected', null);
 }
 
 Template.section_gallery.events({
-  'click a': function(e) {  
-    
+  'click .section-photo': function(e) {  
+    Session.set('photoSelected', $(e.target).parent().attr('data-path'));
   },
 
  'mouseover .section-photo': function(e) {
@@ -35,6 +40,8 @@ Template.section_gallery.events({
       $('.cover').css('display', 'none');
     });
   }
+
+
 
 
 });

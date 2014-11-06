@@ -65,7 +65,7 @@ nav {
 
 .social_media{
 	float:right;
-	width:275px;
+	width:366.66666px;
 	display:inline-block;
 	padding-top:20px;
 }
@@ -98,6 +98,14 @@ nav {
 	background-size: contain;
 	width: 25px;
 	height: 25px;
+}
+
+.contact {
+	background: url('../images/contact.svg') no-repeat center center;
+	background-size: contain;
+	width: 32px;
+	height: 32px;	
+	padding-top:3px;
 }
 
 .cover_photo {
@@ -166,7 +174,7 @@ nav .logo{
 	
 }
 
-button {
+/*button {
 	border:0;
 	background:white;
 	position:relative;
@@ -175,8 +183,8 @@ button {
 	outline:none;
 	cursor:pointer;
 	display:none;
-}
-
+}*/
+/*
 button:first-child{
 	width: 100px; 
 	height: 175px; 
@@ -184,8 +192,8 @@ button:first-child{
 	background-size:contain;
 	float:left;
 }
-
-button:nth-child(2) {
+*/
+/*button:nth-child(2) {
 	width: 100px; 
 	height: 175px; 
 	background:url('../public/right_arr.png') no-repeat center center;
@@ -193,7 +201,7 @@ button:nth-child(2) {
 	float:right;
 
 }
-
+*/
 .main_gallery{
 	height: 550px;/*height:700px;*/
 	width:919px;
@@ -273,3 +281,71 @@ a {
 	float:left;
 	font-size:3em;
 }
+
+#modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+#modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 1000;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: auto;
+}
+
+#modal>div {
+	width:600px;
+	height:500px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+}
+
+.closeModal {
+	position:relative;
+	width:50px;
+	height:50px;
+	background:transparent;
+	color:white;
+	border:none;
+}
+
+.contact_container {
+	position:absolute;
+	width:300px;
+	height:300px;
+	right:50px;
+	margin-top:100px;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.contact_container input[type='text'], .contact_container textarea{
+	display:block;
+	width:200px;
+	border-radius:5px;
+	outline:none;
+	padding:10px;
+	border:1px solid grey;
+	resize:none;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+input[type="submit"] {
+	background: red;
+	color:white;
+	border:none;
+	padding:10px;
+	border-radius:5px;
+	margin-top:10px;
+}
+
