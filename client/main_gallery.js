@@ -22,18 +22,17 @@ Template.main_gallery.rendered = function() {
     });
 
 
-  var height = $(document).height();
-  // $('#footer').css('bottom', -height);
+  
 }
 
 Template.main_gallery.events({
   'click a': function(e) {
-    // debugger
     Session.set("section", $(e.target).parent().attr('data-name'));
-    // Session.set('sectionObj', null);
     var section = Session.get('section');
     var galleries = Session.get('galleries');
-    for (var gallery in galleries) { if(galleries[gallery].name === section) { Session.set('sectionObj', galleries[gallery]) } }
+    for (var gallery in galleries) { if(galleries[gallery].name === section) { Session.set('sectionObj', galleries[gallery]); } }
+    // var height = $(document).height();
+   // $('#footer').css('bottom', -height);
   },
 
   'mouseover a': function(e) {

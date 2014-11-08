@@ -8,6 +8,10 @@ body {
 	background:snow;
 }
 
+body.modal-open {
+	overflow: hidden;
+}
+
 .clearfix {
 	margin:0;
 	padding:0;
@@ -101,7 +105,7 @@ nav {
 }
 
 .contact {
-	background: url('../images/contact.svg') no-repeat center center;
+	background: url('../images/contact.svg') no-repeat center 200%;
 	background-size: contain;
 	width: 32px;
 	height: 32px;	
@@ -203,9 +207,10 @@ button:first-child{
 }
 */
 .main_gallery{
-	height: 550px;/*height:700px;*/
+	/*height: 550px;height:700px;*/
 	width:919px;
 	margin:0 auto 20px auto;
+	overflow:hidden;
 }
 
 
@@ -235,6 +240,7 @@ a {
 .section_container {
 	width: 975px;
 	margin:0 auto;
+	overflow:hidden;
 }
 
 
@@ -247,6 +253,7 @@ a {
 	/*bottom:0;*/
 	width:100%;
 	/*height:100px;*/
+	margin-top:20px;
 
 }
 
@@ -272,6 +279,18 @@ a {
 	font-size:1.5em;
 }
 
+.section-photo .cover{
+	width: 170px;
+	height: 170px;
+	font-size:0.5em;
+	top:10px;
+}
+
+.section-photo .cover>p {
+	bottom:-0px;
+}
+
+
 .desc {
 	width:50%;
 	float:right;
@@ -286,6 +305,7 @@ a {
 	opacity:1;
 	pointer-events: auto;
 }
+
 #modal {
 	position: fixed;
 	top: 0;
@@ -300,12 +320,16 @@ a {
 	pointer-events: auto;
 }
 
-#modal>div {
-	width:600px;
-	height:500px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
+#modal>img {
+	/*width: 100%;*/
+	max-width:50%;
+	max-height:70%;
+	position: absolute;
+	/*float:right;*/
+	top: 20%;
+    left: 50%;
+    /*-webkit-transform: translate(-50%, -75%);*/
+    /*transform: translate(-50%, -75%);*/
 }
 
 .closeModal {
@@ -315,6 +339,17 @@ a {
 	background:transparent;
 	color:white;
 	border:none;
+}
+
+
+#modal>p {
+	position: absolute;
+	 color: white;
+	 top: 20%;
+    left: 10%;
+	 text-align: center;
+	 font-size: 1.2em;
+	
 }
 
 .contact_container {

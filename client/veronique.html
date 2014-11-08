@@ -55,13 +55,14 @@
   {{else}}
     {{> footer}}
   {{/if}}
+
 </template>
 
 <template name="section_gallery">
 {{#if isPhotoSelected}}
-{{> modal}}
+  {{> modal}}
 {{/if}}
-{{> footer}}
+
   <div class="section_container">
 	<h1 class="section_title">«{{grabTitle}}»</h1>
   <div class='desc'>{{{grabDesc}}}</div>
@@ -72,15 +73,15 @@
 	</div>
   </div>
 
-
+{{> footer}}
 </template>
 
 <template name="footer">
-	<!-- <div id="footer">
-		<p>Verodalla &copy;</p>
+	 <div id="footer">
+		<p>Verodalla &copy; 2014</p>
 		<p>All rights reserved</p>
 		<p>Made in New York by <a href="http://tyleraadams.com">Tyler Adams</a></p>
-	 </div>-->
+	 </div>
 </template>
 
 
@@ -96,8 +97,9 @@
     <p>{{dimensions}}</p>
     {{/if}}    
     {{#if year}}
-		<p>{{year}}</p>
-    {{/if}}
+    <p>{{year}}</p>
+    {{/if}}    
+    
 	</div>
 </template>
 
@@ -105,7 +107,22 @@
 <template name="modal">
   <div id="modal">
   <button class="closeModal">x</button>
-   <div class="selected-photo" data-path="{{this.path}}" style="background:url('{{getSelectedPhoto}}') no-repeat center center; background-size:contain;">{{> info}}</div>
+   <img class="selected-photo" data-path="{{getSelectedPhoto.path}}" src="{{getSelectedPhoto.path}}">
+    <p>
+    {{#if getSelectedPhoto.name}}
+    {{getSelectedPhoto.name}}<br>
+    {{/if}}    
+    {{#if getSelectedPhoto.materials}}
+    {{getSelectedPhoto.materials}}<br>
+    {{/if}}  
+    {{#if getSelectedPhoto.dimensions}}
+    {{getSelectedPhoto.dimensions}}<br>
+    {{/if}}    
+    {{#if getSelectedPhoto.year}}
+    {{getSelectedPhoto.year}}
+  
+    {{/if}}
+    </p>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 
 Template.section_gallery.helpers({
-  grabPhotos: function (e) {
+  grabPhotos: function () {
     return Session.get('sectionObj').photos;
   },
 
@@ -18,18 +18,28 @@ Template.section_gallery.helpers({
 });
 
 Template.section_gallery.rendered = function() {
-  // $('#footer').css('bottom', -height);
+  // var height = $(document).height();
+  
+  // $('#footer').css('bottom', 0);
 
-  $('.section-photo .cover').css('width', '170px');
-  $('.section-photo .cover').css('height', '170px');
-  $('.section-photo .cover').css('font-size', '0.5em');
-  $('.section-photo .cover>p').css('top', '10px');
+  // $('.section-photo .cover').css('width', '170px');
+  // $('.section-photo .cover').css('height', '170px');
+  // $('.section-photo .cover').css('font-size', '0.5em');
+  // $('.section-photo .cover>p').css('top', '10px');
   Session.set('photoSelected', null);
 }
 
 Template.section_gallery.events({
   'click .section-photo': function(e) {  
-    Session.set('photoSelected', $(e.target).parent().attr('data-path'));
+    
+    var selectedPath = $(e.target).parent().attr('data-path');
+    var galleryPhotos = Session.get('sectionObj').photos;
+    for (var photo in galleryPhotos) {
+      if (galleryPhotos[photo].path === selectedPath) {
+        return Session.set('photoSelected', galleryPhotos[photo]);
+      }
+    }
+
   },
 
  'mouseover .section-photo': function(e) {
