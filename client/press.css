@@ -1,0 +1,22 @@
+.sub-gallery.Press > img {
+	max-width:170px;
+
+}
+
+.sub-gallery.Press > img:nth-child(even) {
+	display:block;
+}
+
+.sub-gallery.Press {
+	/*width:200px;*/
+
+}
+
+.desc.Press {
+
+}
+.section_title.Press {
+
+}
+
+

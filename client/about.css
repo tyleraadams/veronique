@@ -1,0 +1,17 @@
+.sub-gallery.About {
+	width:175px;
+	float:left;
+	clear:none !important;
+}
+
+.desc.About {
+	float: right;
+	width: 500px;
+	font-size: 1.75em;
+	text-align: justify;
+	margin-top:20px;
+
+}
+.section_title.About {
+	float:none !important;
+}

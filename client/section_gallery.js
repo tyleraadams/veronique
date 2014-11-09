@@ -14,18 +14,20 @@ Template.section_gallery.helpers({
 
   isPhotoSelected: function() {
     return Session.get('photoSelected');
+  },
+
+  grabSubGalleries: function() {
+    return Session.get('sectionObj')['sub_galleries'];
+  },
+
+  isPress: function() {
+    return Session.get('sectionObj').name === "Press";
   }
+  
+  
 });
 
 Template.section_gallery.rendered = function() {
-  // var height = $(document).height();
-  
-  // $('#footer').css('bottom', 0);
-
-  // $('.section-photo .cover').css('width', '170px');
-  // $('.section-photo .cover').css('height', '170px');
-  // $('.section-photo .cover').css('font-size', '0.5em');
-  // $('.section-photo .cover>p').css('top', '10px');
   Session.set('photoSelected', null);
 }
 

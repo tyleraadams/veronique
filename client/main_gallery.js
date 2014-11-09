@@ -21,6 +21,11 @@ Template.main_gallery.rendered = function() {
       Session.set('galleries', result);
     });
 
+  var currentScrollPos = $(document).scrollTop();
+  if (currentScrollPos >= $('.main_gallery').offset().top) {
+    $('.arrow.small').css('display','none');
+  }
+
 
   
 }
@@ -43,6 +48,8 @@ Template.main_gallery.events({
       $('.cover').css('display', 'none');
     });
   }
+
+
 });
 
 

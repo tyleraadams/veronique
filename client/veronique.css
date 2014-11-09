@@ -110,6 +110,7 @@ nav {
 	width: 32px;
 	height: 32px;	
 	padding-top:3px;
+	cursor:pointer;
 }
 
 .cover_photo {
@@ -241,6 +242,8 @@ a {
 	width: 975px;
 	margin:0 auto;
 	overflow:hidden;
+	border-top:2px solid #76666a;
+	padding-top:15px;
 }
 
 
@@ -339,6 +342,7 @@ a {
 	background:transparent;
 	color:white;
 	border:none;
+	font-size:2em;
 }
 
 
@@ -384,3 +388,63 @@ input[type="submit"] {
 	margin-top:10px;
 }
 
+/*right-pointing arrow*/
+.arrow {
+	background:url('images/arrow.svg') no-repeat center center;
+	background-size:contain;
+	fill:#ffffff;
+	/*background:#000000;*/
+}
+
+.arrow:hover {
+	opacity:0.7;
+}
+
+
+
+.arrow.down{
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+} 
+
+.arrow.left{
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+} 
+
+.arrow.small{
+	width:100px;
+	height:100px;
+}
+
+.arrow.large{
+	width:200px;
+	height:200px;
+}
+
+.arrow.bottom-right {
+	position:fixed;
+	bottom:50px;
+	right:50px;
+}
+
+.arrow.pos-right {
+	position:absolute;
+	right:0;
+	margin-right:20px;
+	top:150px;
+}
+
+.arrow.pos-left {
+	position:absolute;
+	left:0;
+	margin-left:20px;
+	top:150px;
+}
+
+.arrow.white {
+	fill:#fff;
+	color:#fff;
+}
