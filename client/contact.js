@@ -19,9 +19,13 @@ Template.contact.events({
     contact.email = $('#contact').find('#email').val();
     contact.msg = $('#contact').find('#msg').val();
     Meteor.call('insertContact', contact, function(err,result){
-      console.log(result)
+      console.log(result);
     });
     Session.set('contact', false);
+  },
+
+  'click .closeContact': function(e) {
+      Session.set('contact', false);
   }
 
 });

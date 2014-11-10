@@ -33,8 +33,12 @@ Template.modal.events({
   },
 
   'click .arrow': function(e) {
-
-  	var dir = $(e.target).parent().attr('data:dir');
+    debugger
+    var dir = $(e.target).parent().attr('data:dir');
+    if ( typeof dir === 'undefined' ){
+      dir = $(e.target).attr('data:dir');
+    }
+  	// var dir = $(e.target).parent().attr('data:dir');
   	var currentSection = Session.get('sectionObj');
   	var currentPhoto = Session.get('photoSelected');
 
