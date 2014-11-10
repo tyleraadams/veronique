@@ -7,11 +7,20 @@
 .desc.About {
 	float: right;
 	width: 500px;
-	font-size: 1.75em;
+	font-size: 1.5em;
 	text-align: justify;
 	margin-top:20px;
+	line-height:1.5em;
+	letter-spacing: 0.1em;
 
 }
+
+
+.desc.About > p {
+	margin-bottom:20px;
+}
+
 .section_title.About {
 	float:none !important;
 }
+

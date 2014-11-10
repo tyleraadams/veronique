@@ -26,7 +26,24 @@ Template.main_gallery.rendered = function() {
     $('.arrow.small').css('display','none');
   }
 
+  $(window).scroll(function() {
 
+    if ($(this).scrollTop() <= $('nav').offset().top/2) {        // If page is scrolled more than 50px
+        $('.arrow-return.down').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('.arrow-return.down').fadeOut(200);   // Else fade out the arrow
+    }
+
+    if ($('.section_container').length > 0) {
+
+      if ($(this).scrollTop() >= $('.section_container').offset().top) {
+        $('.arrow-return.up').fadeIn(200);    // Fade in the arrow
+      } else {
+          $('.arrow-return.up').fadeOut(200);
+      }
+      
+    }
+});
   
 }
 
@@ -36,6 +53,13 @@ Template.main_gallery.events({
     var section = Session.get('section');
     var galleries = Session.get('galleries');
     for (var gallery in galleries) { if(galleries[gallery].name === section) { Session.set('sectionObj', galleries[gallery]); } }
+    
+    if ($('.section_container')) {
+      $('html,body').animate({
+    scrollTop: $('.section_container').offset().top
+    }, 500);
+    }
+      
     // var height = $(document).height();
    // $('#footer').css('bottom', -height);
   },

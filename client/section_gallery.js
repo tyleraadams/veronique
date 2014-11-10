@@ -29,6 +29,11 @@ Template.section_gallery.helpers({
 
 Template.section_gallery.rendered = function() {
   Session.set('photoSelected', null);
+
+  $('html,body').animate({
+    scrollTop: $('.section_container').offset().top
+  }, 500);
+  
 }
 
 Template.section_gallery.events({
@@ -41,6 +46,14 @@ Template.section_gallery.events({
         return Session.set('photoSelected', galleryPhotos[photo]);
       }
     }
+
+  },
+
+  'click .arrow-return': function(e) {
+    var body = $("html, body");
+    body.animate({
+      scrollTop: $('nav').offset().top
+    }, 500);
 
   },
 

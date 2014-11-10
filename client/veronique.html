@@ -11,10 +11,13 @@
 </body>
 
 <template name="landing">
-	<div class="splash-cover"></div>
-	<img src="../images/studio.JPG" class="splash"/>
-	<img src="../images/Logo-Verodalla-Noir.png" class="sign"/>
-  <div class="arrow down small bottom-right"></div>
+	<!-- <div class="splash-cover"></div> -->
+	<div class="splash"> 
+    <img src="../images/Logo-Verodalla-Noir.png" class="sign"/> 
+    <div class="arrow-return down small bottom-right"></div>
+  </div>
+	
+  
 </template>
 
 <template name="nav">
@@ -66,6 +69,7 @@
 
 <div class="section_container">
   <h1 class="section_title {{grabTitle}}">«{{grabTitle}}»</h1>
+  <!-- Recent Exhibits -->
     {{#if grabSubGalleries}}
       {{#each grabSubGalleries}}
         <div class='desc new_exhibits'>
@@ -82,7 +86,7 @@
 
     {{else}}
 	    
-      
+      <!--  -->
       <div class='desc {{grabTitle}}'>{{{grabDesc}}}</div>
       <div class="sub-gallery {{grabTitle}}">
       {{#if isPress}}
@@ -92,7 +96,7 @@
           {{/each}}
        {{else}}
 		    {{#each grabPhotos}}	
-          <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;">{{>info}}</div>
+          <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;{{this.style}}">{{>info}}</div>
 		    {{/each}}
       {{/if}}
       </div>
@@ -100,6 +104,7 @@
 
     {{/if}}
 </div>
+<div class="arrow-return up small bottom-right"></div>
 {{> footer}}
 </template>
 
@@ -138,8 +143,9 @@
   <button class="closeModal">x</button>
   <svg data:dir="right" class= "arrow large pos-right white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><polygon points="39.2,28.5 61.1,50.4 39.2,72.3 51.5,50.4"/></svg>
   <!-- <div class="arrow large pos-right white"></div> -->
-   <img class="selected-photo" data-path="{{getSelectedPhoto.path}}" src="{{getSelectedPhoto.path}}">
-    <p>
+  <figure>
+   <img class="selected-photo" data-path="{{getSelectedPhoto.path}}" src="{{getSelectedPhoto.path}}" style="{{getSelectedPhoto.style}}">
+    <figcaption>
     {{#if getSelectedPhoto.name}}
     {{getSelectedPhoto.name}}<br>
     {{/if}}    
@@ -153,7 +159,8 @@
     {{getSelectedPhoto.year}}
   
     {{/if}}
-    </p>
+    </figcaption>
+  </figure>
 
      <svg data:dir="left" class= "arrow left large pos-left white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><polygon points="39.2,28.5 61.1,50.4 39.2,72.3 51.5,50.4"/></svg>
     

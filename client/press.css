@@ -1,14 +1,27 @@
 .sub-gallery.Press > img {
-	max-width:170px;
+	/*max-width:170px;*/
+	/*max-width: 170px;*/
+	/*padding: 10px 10px;*/
+	/*background: white;*/
+	/*max-height: 170px;*/
+	display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
+    margin-bottom: 20px;
+    width: 100%;
 
 }
 
-.sub-gallery.Press > img:nth-child(even) {
-	display:block;
-}
+
 
 .sub-gallery.Press {
 	/*width:200px;*/
+	-moz-column-count: 4;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 50px;
+    column-count: 4;
+    column-gap: 50px;
+    width: 975px;
+    margin-top: 63px;
 
 }
 

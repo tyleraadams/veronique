@@ -10,14 +10,14 @@ Template.contact.rendered = function() {
 }
 
 Template.landing.events({
-  'click .arrow': function(e) { 
+  'click .arrow-return': function(e) { 
     var body = $("html, body");
     body.animate({
-      scrollTop: $('.main_gallery').offset().top
+      scrollTop: $('nav').offset().top
     }, 500);
 
     
-    $('.arrow.small').hide()
+    
   }
 
 });

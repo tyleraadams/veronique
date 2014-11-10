@@ -66,24 +66,26 @@
 
 // var photoDefault = function(path, obj) {
 	 
-// 	this.name= typeof obj !== 'undefined' ? obj.name : null;
+// 	this.name = typeof obj !== 'undefined' ? obj.name : null;
 // 	this.materials= typeof obj !== 'undefined' ? obj.materials :  null;
 // 	this.dimensions = typeof obj !== 'undefined' ? obj.dimensions : null;
 // 	this.year = typeof obj !== 'undefined' ? obj.year : null;
 // 	this.path = path;
+// 	this.style = typeof obj !== 'undefined' ? obj.style : null;
 // };
 // var photoList = ['images/about/Copie de VERO NOIRBLA.jpg','images/about/LivenLulu & personnage 6.jpg','images/about/P6050021.JPG','images/about/P6050093.JPG','images/about/P6050220.JPG','images/about/P6050342bis.jpg','images/livenlulu/3AR-42-US.2.jpg','images/livenlulu/3LLL-A20-US.2.jpg','images/livenlulu/3LLL-A23-US.2.jpg','images/livenlulu/3LLL-A26B-US.2.jpg','images/livenlulu/3LLL-A44S.2.jpg','images/livenlulu/3LLL-A50S.2.jpg','images/livenlulu/3LLL-A53S.2.jpg','images/livenlulu/3LLL-A60-US.2.jpg','images/livenlulu/3LLL-A61-US.2.jpg','images/livenlulu/3LLL-AR37-US.2.jpg','images/livenlulu/3LLL-AR37-US.jpg','images/livenlulu/3LLL-AR37B-US.jpg','images/livenlulu/3LLL-AR39-US.jpg','images/livenlulu/3LLL-AR53S.2.jpg','images/livenlulu/3LLL-AR53S.jpg','images/livenlulu/3LLL-AR55S.jpg','images/livenlulu/3LLL-AR60US.2.jpg','images/livenlulu/3LLL-AR61US.2.jpg','images/livenlulu/3LLL-AR62US.jpg','images/livenlulu/3LLL-AR64US.A.jpg','images/livenlulu/3LLL-AR69US.2.jpg','images/livenlulu/3LLL-AR69US.jpg','images/livenlulu/3LLL-AR70US.jpg','images/livenlulu/3LLL-AR71US.2.jpg','images/livenlulu/3LLL-CCD12.jpg','images/livenlulu/3LLL-CCD22S.2.jpg','images/livenlulu/3LLL-CCD24.2.jpg','images/livenlulu/3LLL-CPLE10-US.jpg','images/livenlulu/3LLL-CPLE11.2.jpg','images/livenlulu/3LLL-CPLE12-S.2.jpg','images/livenlulu/3LLL-CPLE12-S.jpg','images/livenlulu/3LLL-CPLE20-US.2.jpg','images/livenlulu/3LLL-CPLE8-US.2jpg','images/livenlulu/3LLL-EXT4-US.B.2.jpg','images/livenlulu/3LLL-EXT5-US.B.2.jpg','images/livenlulu/3LLL-EXT6-US.A.2.jpg','images/livenlulu/3LLL-EXT8-US.B.2.jpg','images/livenlulu/3LLL-V18-US.jpg','images/livenlulu/3LLL-V6B-US.jpg','images/livenlulu/3LLL-V8B-US.jpg','images/livenlulu/3LLLAR59US.2a.jpg','images/livenlulu/3LLLAR59US.B.jpg','images/livenlulu/3LLLAR80US.2.jpg','images/livenlulu/3LLLCCD28US.2.jpg','images/livenlulu/DSC09269.jpg','images/livenlulu/DSC09276.2.jpg','images/livenlulu/DSC09282.2.jpg','images/livenlulu/DSC09308.2.jpg','images/livenlulu/DSC09314.2.jpg','images/livenlulu/DSC09326.2.jpg','images/livenlulu/IMAG0673.2.jpg','images/livenlulu/LivenLulu-&-personnage-2.jpg','images/livenlulu/LivenLulu-&-personnage-3.jpg','images/livenlulu/LivenLulu-&-personnage-4B-3.jpg','images/livenlulu/LivenLulu-&-personnage-5.jpg','images/livenlulu/LivenLulu-16.jpg','images/livenlulu/LivenLulu-18.jpg','images/livenlulu/LivenLulu-19.jpg','images/livenlulu/LivenLulu-20.jpg','images/livenlulu/LivenLulu-21.jpg','images/livenlulu/LivenLulu-22.jpg','images/livenlulu/LivenLulu-23.jpg','images/livenlulu/LivenLulu-24.b.jpg','images/livenlulu/LivenLulu-24.jpg','images/livenlulu/LivenLulu-25.jpg','images/livenlulu/LivenLulu-27.jpg','images/livenlulu/LivenLulu-28.jpg','images/livenlulu/LivenLulu-8.jpg','images/livenlulu/Univers-Atelier-Liv-30C107.jpg','images/livenlulu/Univers-LivenLulu-1-2.jpg','images/livenlulu/Univers-LivenLulu-4.jpg','images/livenlulu/Univers-LivenLulu-5.jpg','images/livenlulu/Univers-LivenLulu-8.jpg','images/livenlulu/Univers-LivenLulu-9B.jpg','images/livenlulu/Univers-dortoir-LivenLulu.jpg','images/press/Dijon Mag.jpg','images/press/France Bleue Borurgogne.jpg','images/press/French Morning.png','images/press/High End.jpg','images/press/Land of .jpg','images/press/Le Point NY.jpg','images/press/Le bien public.jpg','images/press/NBC4NewYork.jpg','images/press/TV Net Bourgogne.jpg','images/press/Ubifrance.jpg','images/press/cmaurice.jpg','images/press/le-journal-de-saone-et-loire.jpg','images/press/logo-Observateur-Avesnois.gif','images/press/logo-VoixduNord.png','images/press/logo-jdp-bourgogne.jpg','images/press/shani_camillemaurice.jpg'];
 
 
 
 
-// //,',,,,,,,,,,
+
 // var paintingsDetails = [{
 // name: "Coquelicots au Vent Blanc",
 // materials: "Mineral paste, metal, acrylic and mixed media",
 // dimensions: '63"x31"x35"',
 // year: '2009',
-// path:'images/poppies/Coquelicot au vent blanc.jpg'
+// path:'images/poppies/Coquelicot au vent blanc.jpg',
+// style: 'transform: rotate(90deg);'
 // },
 
 // {
@@ -91,7 +93,8 @@
 // materials: 'Mineral paste, metal, acrylic and mixed media',
 // dimensions:'63"x31"x35"',
 // year:'2009',
-// path:'images/poppies/Coquelicot au vent rouge.JPG'
+// path:'images/poppies/Coquelicot au vent rouge.JPG',
+// style:'transform: rotate(90deg);'
 // },
 
 // {
@@ -291,7 +294,7 @@
 
 // Galleries.update({name:'Poppies'}, {$set:{style: 'background:url(images/poppies.jpg) no-repeat center center; width:200px; height:200px; background-size: 132% 132%;'}});
 
-Galleries.update({name:'Press'}, {$set:{style: 'background: url(images/press.jpg) no-repeat center 0%; width:200px; height:200px; background-size: cover;'}})
+// Galleries.update({name:'Press'}, {$set:{style: 'background: url(images/press.jpg) no-repeat center 0%; width:200px; height:200px; background-size: cover;'}})
 
 
 

@@ -8,13 +8,26 @@ Template.modal.helpers({
 
 Template.modal.rendered = function() {
 	$("body").addClass("modal-open");
+
+  
+ 
+  var windowH = $(window).height();
+  var windowW = $(window).width();
+
+
+
+  $(".selected-photo").load(function() {
+     var $loading = $("#modal figure");
+      $loading.css({
+  
+    left: ((windowW - $loading.outerWidth())/2 + $(document).scrollLeft())
+  
+  });
+  });
 }
 
 Template.modal.events({
   'click .closeModal': function(e) {
-  	// e.stopPropogation();
-  	// debugger
-  	console.log('you are trying to close the modal');
   	$("body").removeClass("modal-open");
     Session.set("photoSelected", null);
   },
@@ -44,6 +57,7 @@ Template.modal.events({
   			return Session.set('photoSelected', photos[parseInt(photo) + dirLib[dir]])
   		}
   	}
+
   }
 });
 
