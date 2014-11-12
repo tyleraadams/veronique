@@ -38,13 +38,15 @@ Template.section_gallery.rendered = function() {
 
 Template.section_gallery.events({
   'click .section-photo': function(e) {  
-    
-    var selectedPath = $(e.target).parent().attr('data-path');
-    var galleryPhotos = Session.get('sectionObj').photos;
-    for (var photo in galleryPhotos) {
-      if (galleryPhotos[photo].path === selectedPath) {
-        return Session.set('photoSelected', galleryPhotos[photo]);
+    if (Session.get('sectionObj').name !== 'Press') {
+      var selectedPath = $(e.target).parent().attr('data-path');
+      var galleryPhotos = Session.get('sectionObj').photos;
+      for (var photo in galleryPhotos) {
+        if (galleryPhotos[photo].path === selectedPath) {
+          return Session.set('photoSelected', galleryPhotos[photo]);
+        }
       }
+      
     }
 
   },
@@ -64,6 +66,10 @@ Template.section_gallery.events({
     $(cover).mouseout(function(){
       $('.cover').css('display', 'none');
     });
+  },
+
+  'click .flag': function(e) {
+    e.prevenDefault();
   }
 
 

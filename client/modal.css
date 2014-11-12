@@ -17,30 +17,17 @@
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: auto;
-
-
-/*	-moz-column-count: 2;
-    -moz-column-gap: 100px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 100px;
-    column-count: 2;
-    column-gap: 100px;
-    width: 100%;*/
-    /*text-align:center;*/
 }
 
 #modal img {
 	height:30em;
 	max-height:350px;
-	
 }
 
 #modal figure {
 	top:50%;
 	position: absolute;
 	margin-top:-15em;
-	/*left:45%;*/
-	/*margin-left:-15em;*/
 }
 
 #modal figcaption {

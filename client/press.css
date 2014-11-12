@@ -1,4 +1,4 @@
-.sub-gallery.Press > img {
+.sub-gallery.Press img {
 	/*max-width:170px;*/
 	/*max-width: 170px;*/
 	/*padding: 10px 10px;*/
@@ -9,7 +9,6 @@
     width: 100%;
 
 }
-
 
 
 .sub-gallery.Press {
@@ -25,11 +24,43 @@
 
 }
 
-.desc.Press {
 
-}
-.section_title.Press {
 
+.french {
+    background: url('images/press/France-flat-icon.png') no-repeat center center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+    position: relative;
+    top: -60px;
+    float:left;
 }
+
+.english {
+    background: url('images/press/United-States.png') no-repeat center center;
+    background-size: cover;
+    width:30px;
+    height:30px;
+    position: relative;
+    float:right;
+    top: -60px;
+}
+
+
+.french, .english {
+    visibility:hidden;
+}
+
+
+.press-wrapper:hover>.french, .press-wrapper:hover>.english{
+    visibility:visible;
+}
+
+
+.press-wrapper {
+    overflow:hidden;
+}
+
+
 
 

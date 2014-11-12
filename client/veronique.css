@@ -44,7 +44,7 @@ body.modal-open {
 }
 
 .sign {
-	width:500px;
+	width:400px;
 	position:absolute;
 	top:1%;
 	left:5%;
@@ -221,7 +221,7 @@ button:first-child{
 
 a {
   text-decoration:none;
-  color: #00B7FF;
+  color: #fe3333;
 }
 
 
@@ -272,7 +272,7 @@ a {
 	text-align: center;
 	/*padding:1px;*/
 	border-radius:5px;
-	border:3px solid #b32b28 ;
+	border:3px solid #fe3333;
 
 
 }
@@ -378,14 +378,14 @@ a {
 
 .arrow.pos-right {
 	position:absolute;
-	right:-10px;
-	top:150px;
+	right:-20px;
+	top:20em;
 }
 
 .arrow.pos-left {
 	position:absolute;
-	left:-10px;
-	top:150px;
+	left:-20px;
+	top:20em;
 }
 
 .arrow.white {

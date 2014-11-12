@@ -33,7 +33,7 @@ Template.modal.events({
   },
 
   'click .arrow': function(e) {
-    debugger
+
     var dir = $(e.target).parent().attr('data:dir');
     if ( typeof dir === 'undefined' ){
       dir = $(e.target).attr('data:dir');

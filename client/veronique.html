@@ -27,11 +27,11 @@
   	<nav>
     	<div class="logo"> </div>
     	<div class="social_media">
-        <a href="http://twitter.com/verodalla">
+        <a href="http://twitter.com/verodalla" target="_blank">
         	<div class="twitter"></div></a>
-          <a href="http://facebook.com/verodalla">
+          <a href="http://facebook.com/verodalla" target="_blank">
         	<div class="facebook"></div></a>
-          <a href="http://instagram.com/verodalla_artist">
+          <a href="http://instagram.com/verodalla_artist" target="_blank">
           <div class="instagram"></div></a>          
           <a>
         	<div class="contact"></div></a>
@@ -94,7 +94,17 @@
       <div class="sub-gallery {{grabTitle}}">
       {{#if isPress}}
           {{#each grabPhotos}}  
-            <img data-path="{{this.path}}" src="{{this.path}}">
+            <div class="press-wrapper">
+              <img data-path="{{this.path}}" src="{{this.path}}">
+              {{#if this.articles.french}}
+              <a class="french flag" href="{{this.articles.french}}" download><div class="french"></div></a>
+              {{/if}}  
+
+              {{#if this.articles.english}}    
+              <a class="english flag" href="{{this.articles.english}}" download> <div class="english"> </div></a>
+              {{/if}}
+             
+            </div>
             {{>info}}
           {{/each}}
        {{else}}
@@ -113,9 +123,9 @@
 
 <template name="footer">
 	 <div id="footer">
-		<p>Verodalla &copy; 2014</p>
+		<p>VeroDalla &copy; 2014</p>
 		<p>All rights reserved</p>
-		<p>Made in New York by <a href="http://tyleraadams.com">Tyler Adams</a></p>
+		<p>Made in New York by <a href="http://tyleraadams.com" target="_blank">Tyler Adams</a></p>
 	 </div>
 </template>
 

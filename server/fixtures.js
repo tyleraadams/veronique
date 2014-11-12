@@ -32,7 +32,7 @@
 
 // poppies.name = 'Poppies';
 // poppies.desc = '<p>Picking a poppy will change her life in art. Upon such a revelation, she will leave in search of beauty, harmony, well-being, balance.</p><p><em>La cueillette d\'un coquelicot fera basculer sa vie dans l\'art. Telle une r&#233;v&#233;lation, elle partira &#224; la recherche du beau, de l\'harmonie, du bien &#234;tre, de l\'&#233;quilibre.</em></p><p>Each piece reveals itself as sober, refined, soothing, cheerful, simple and sometimes obvious.</p>';
-// poppies.cover_photo = 'images/poppies.jpg';
+// poppies.cover_photo = 'images/poppies/Detail coquelicot au vent rouge.JPG';
 // poppies.order = 3;
 
 // galleries.push(poppies);
@@ -45,7 +45,8 @@
 // galleries.push(about);
 
 // exhibitions.name = 'Recent Exhibitions';
-// exhibitions.sub_galleries = [ {name:"Me and Them&#8230;Deeper" , date:'May - June 2014' , location: 'The Broome Hotel, Soho, New York, NY',photos: [{path:'images/exhibit/1 Me and Them Deeper/DSC_5633.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5644.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5648.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5656.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5659.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5754.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5760.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5765.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5798.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5840.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5848.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5869.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5887.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5898.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5904.JPG'}]},  {name:"Gallery 32 Fine Art" , date:'June 2013' , location: 'Chelsea, New York, NY',photos:[{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3200.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3208.jpg'}, {path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3210.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3222.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3225.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3226.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3228.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3251.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3277.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3286.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3303.jpg'}] }]
+// exhibitions.sub_galleries = [ {name:"Me and Them&#8230;Deeper" , date:'May - June 2014' , location: 'The Broome Hotel, Soho, New York, NY',photos: [{path:'images/exhibit/1 Me and Them Deeper/DSC_5633.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5644.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5648.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5656.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5659.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5754.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5760.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5765.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5798.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5840.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5848.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5869.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5887.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5898.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5904.JPG'}]},  
+// {name:"Gallery 32 Fine Art" , date:'June 2013' , location: 'Chelsea, New York, NY',photos:[{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3200.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3208.jpg'}, {path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3210.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3222.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3225.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3226.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3228.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3277.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3286.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3377.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3379.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3399.jpg'}] }]
 
 // exhibitions.cover_photo = 'images/exhibits.png';
 // exhibitions.order = 5;
@@ -73,11 +74,159 @@
 // 	this.path = path;
 // 	this.style = typeof obj !== 'undefined' ? obj.style : null;
 // };
-// var photoList = ['images/about/Copie de VERO NOIRBLA.jpg','images/about/LivenLulu & personnage 6.jpg','images/about/P6050021.JPG','images/about/P6050093.JPG','images/about/P6050220.JPG','images/about/P6050342bis.jpg','images/livenlulu/3AR-42-US.2.jpg','images/livenlulu/3LLL-A20-US.2.jpg','images/livenlulu/3LLL-A23-US.2.jpg','images/livenlulu/3LLL-A26B-US.2.jpg','images/livenlulu/3LLL-A44S.2.jpg','images/livenlulu/3LLL-A50S.2.jpg','images/livenlulu/3LLL-A53S.2.jpg','images/livenlulu/3LLL-A60-US.2.jpg','images/livenlulu/3LLL-A61-US.2.jpg','images/livenlulu/3LLL-AR37-US.2.jpg','images/livenlulu/3LLL-AR37-US.jpg','images/livenlulu/3LLL-AR37B-US.jpg','images/livenlulu/3LLL-AR39-US.jpg','images/livenlulu/3LLL-AR53S.2.jpg','images/livenlulu/3LLL-AR53S.jpg','images/livenlulu/3LLL-AR55S.jpg','images/livenlulu/3LLL-AR60US.2.jpg','images/livenlulu/3LLL-AR61US.2.jpg','images/livenlulu/3LLL-AR62US.jpg','images/livenlulu/3LLL-AR64US.A.jpg','images/livenlulu/3LLL-AR69US.2.jpg','images/livenlulu/3LLL-AR69US.jpg','images/livenlulu/3LLL-AR70US.jpg','images/livenlulu/3LLL-AR71US.2.jpg','images/livenlulu/3LLL-CCD12.jpg','images/livenlulu/3LLL-CCD22S.2.jpg','images/livenlulu/3LLL-CCD24.2.jpg','images/livenlulu/3LLL-CPLE10-US.jpg','images/livenlulu/3LLL-CPLE11.2.jpg','images/livenlulu/3LLL-CPLE12-S.2.jpg','images/livenlulu/3LLL-CPLE12-S.jpg','images/livenlulu/3LLL-CPLE20-US.2.jpg','images/livenlulu/3LLL-CPLE8-US.2jpg','images/livenlulu/3LLL-EXT4-US.B.2.jpg','images/livenlulu/3LLL-EXT5-US.B.2.jpg','images/livenlulu/3LLL-EXT6-US.A.2.jpg','images/livenlulu/3LLL-EXT8-US.B.2.jpg','images/livenlulu/3LLL-V18-US.jpg','images/livenlulu/3LLL-V6B-US.jpg','images/livenlulu/3LLL-V8B-US.jpg','images/livenlulu/3LLLAR59US.2a.jpg','images/livenlulu/3LLLAR59US.B.jpg','images/livenlulu/3LLLAR80US.2.jpg','images/livenlulu/3LLLCCD28US.2.jpg','images/livenlulu/DSC09269.jpg','images/livenlulu/DSC09276.2.jpg','images/livenlulu/DSC09282.2.jpg','images/livenlulu/DSC09308.2.jpg','images/livenlulu/DSC09314.2.jpg','images/livenlulu/DSC09326.2.jpg','images/livenlulu/IMAG0673.2.jpg','images/livenlulu/LivenLulu-&-personnage-2.jpg','images/livenlulu/LivenLulu-&-personnage-3.jpg','images/livenlulu/LivenLulu-&-personnage-4B-3.jpg','images/livenlulu/LivenLulu-&-personnage-5.jpg','images/livenlulu/LivenLulu-16.jpg','images/livenlulu/LivenLulu-18.jpg','images/livenlulu/LivenLulu-19.jpg','images/livenlulu/LivenLulu-20.jpg','images/livenlulu/LivenLulu-21.jpg','images/livenlulu/LivenLulu-22.jpg','images/livenlulu/LivenLulu-23.jpg','images/livenlulu/LivenLulu-24.jpg','images/livenlulu/LivenLulu-25.jpg','images/livenlulu/LivenLulu-27.jpg','images/livenlulu/LivenLulu-28.jpg','images/livenlulu/LivenLulu-8.jpg','images/livenlulu/Univers-Atelier-Liv-30C107.jpg','images/livenlulu/Univers-LivenLulu-1-2.jpg','images/livenlulu/Univers-LivenLulu-4.jpg','images/livenlulu/Univers-LivenLulu-5.jpg','images/livenlulu/Univers-LivenLulu-8.jpg','images/livenlulu/Univers-LivenLulu-9B.jpg','images/livenlulu/Univers-dortoir-LivenLulu.jpg','images/press/Dijon Mag.jpg','images/press/France Bleue Borurgogne.jpg','images/press/French Morning.png','images/press/High End.jpg','images/press/Land of .jpg','images/press/Le Point NY.jpg','images/press/Le bien public.jpg','images/press/NBC4NewYork.jpg','images/press/TV Net Bourgogne.jpg','images/press/Ubifrance.jpg','images/press/cmaurice.jpg','images/press/le-journal-de-saone-et-loire.jpg','images/press/logo-Observateur-Avesnois.gif','images/press/logo-VoixduNord.png','images/press/logo-jdp-bourgogne.jpg','images/press/shani_camillemaurice.jpg'];
+// var photoList = ['images/about/Copie de VERO NOIRBLA.jpg','images/about/LivenLulu & personnage 6.jpg','images/about/P6050021.JPG','images/about/P6050093.JPG','images/about/P6050220.JPG','images/about/P6050342bis.jpg','images/livenlulu/3AR-42-US.2.jpg','images/livenlulu/3LLL-A20-US.2.jpg','images/livenlulu/3LLL-A23-US.2.jpg','images/livenlulu/3LLL-A26B-US.2.jpg','images/livenlulu/3LLL-A44S.2.jpg','images/livenlulu/3LLL-A50S.2.jpg','images/livenlulu/3LLL-A53S.2.jpg','images/livenlulu/3LLL-A60-US.2.jpg','images/livenlulu/3LLL-A61-US.2.jpg','images/livenlulu/3LLL-AR37-US.2.jpg','images/livenlulu/3LLL-AR37-US.jpg','images/livenlulu/3LLL-AR37B-US.jpg','images/livenlulu/3LLL-AR39-US.jpg','images/livenlulu/3LLL-AR53S.2.jpg','images/livenlulu/3LLL-AR53S.jpg','images/livenlulu/3LLL-AR55S.jpg','images/livenlulu/3LLL-AR60US.2.jpg','images/livenlulu/3LLL-AR61US.2.jpg','images/livenlulu/3LLL-AR62US.jpg','images/livenlulu/3LLL-AR64US.A.jpg','images/livenlulu/3LLL-AR69US.2.jpg','images/livenlulu/3LLL-AR69US.jpg','images/livenlulu/3LLL-AR70US.jpg','images/livenlulu/3LLL-AR71US.2.jpg','images/livenlulu/3LLL-CCD12.jpg','images/livenlulu/3LLL-CCD22S.2.jpg','images/livenlulu/3LLL-CCD24.2.jpg','images/livenlulu/3LLL-CPLE10-US.jpg','images/livenlulu/3LLL-CPLE11.2.jpg','images/livenlulu/3LLL-CPLE12-S.2.jpg','images/livenlulu/3LLL-CPLE12-S.jpg','images/livenlulu/3LLL-CPLE20-US.2.jpg','images/livenlulu/3LLL-CPLE8-US.2jpg','images/livenlulu/3LLL-EXT4-US.B.2.jpg','images/livenlulu/3LLL-EXT5-US.B.2.jpg','images/livenlulu/3LLL-EXT6-US.A.2.jpg','images/livenlulu/3LLL-EXT8-US.B.2.jpg','images/livenlulu/3LLL-V18-US.jpg','images/livenlulu/3LLL-V6B-US.jpg','images/livenlulu/3LLL-V8B-US.jpg','images/livenlulu/3LLLAR59US.2a.jpg','images/livenlulu/3LLLAR59US.B.jpg','images/livenlulu/3LLLAR80US.2.jpg','images/livenlulu/3LLLCCD28US.2.jpg','images/livenlulu/DSC09269.jpg','images/livenlulu/DSC09276.2.jpg','images/livenlulu/DSC09282.2.jpg','images/livenlulu/DSC09308.2.jpg','images/livenlulu/DSC09314.2.jpg','images/livenlulu/DSC09326.2.jpg','images/livenlulu/IMAG0673.2.jpg','images/livenlulu/LivenLulu-&-personnage-2.jpg','images/livenlulu/LivenLulu-&-personnage-3.jpg','images/livenlulu/LivenLulu-&-personnage-4B-3.jpg','images/livenlulu/LivenLulu-&-personnage-5.jpg','images/livenlulu/LivenLulu-16.jpg','images/livenlulu/LivenLulu-18.jpg','images/livenlulu/LivenLulu-19.jpg','images/livenlulu/LivenLulu-20.jpg','images/livenlulu/LivenLulu-21.jpg','images/livenlulu/LivenLulu-22.jpg','images/livenlulu/LivenLulu-23.jpg','images/livenlulu/LivenLulu-24.jpg','images/livenlulu/LivenLulu-25.jpg','images/livenlulu/LivenLulu-27.jpg','images/livenlulu/LivenLulu-28.jpg','images/livenlulu/LivenLulu-8.jpg','images/livenlulu/Univers-Atelier-Liv-30C107.jpg','images/livenlulu/Univers-LivenLulu-1-2.jpg','images/livenlulu/Univers-LivenLulu-4.jpg','images/livenlulu/Univers-LivenLulu-5.jpg','images/livenlulu/Univers-LivenLulu-8.jpg','images/livenlulu/Univers-LivenLulu-9B.jpg','images/livenlulu/Univers-dortoir-LivenLulu.jpg']
 
 
+// var pressDetails = [
+// 	{
+// 		path: 'images/press/Le bien public.jpg',
+// 		articles: { 
+// 			french: 'articles/Bien_Public/FR_2009_dec.jpg',
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/cde.jpg',
+// 		articles: { 
+// 			french: 'articles/Caisse_d_Epargne/FR-Verodalla CEP-avril-2009.pdf',
+// 			english: 'articles/Caisse_d_Epargne/ANG-Verodalla CEP-avril-2009-copy.pdf',
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/aah.png',
+// 		articles: { 
+// 			english: 'articles/Action_against_Hunger-Charity_buzz/ANG-Collaboration-with-Action-Against-Hunger.pdf',
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/sh.jpg',
+// 		articles: { 
+// 			english: 'articles/Showtime_House/ANG-The-Showtime-House-at-Cassa-Hotel.pdf',
+// 		}
+// 	},
+
+// 	{
+// 		path: 'images/press/charity-buzz.png',
+// 		articles: {
+// 			english: 'articles/Action_against_Hunger-Charity_buzz/ANG-charity-buzz.pdf'
+// 		}
+// 	},
+
+	
+		
+// 	{
+// 		path: 'images/press/Dijon Mag.jpg',
+// 		articles: {
+// 			french: 'articles/Dijon_Beaune_Mag/FR-Bienvenue-a-Livenlululand-National-2012.pdf',
+// 			english: 'ANG-Bienvenue-a-Livenlululand-National-2012-copy.pdf'
+// 		}
+// 	},
+
+// 	{
+// 		path: 'images/press/cover T&T.jpg',
+// 		articles: {
+// 			french: 'aricles/Towns_Territories/FR-La-vie-habillee-en-robe-rouge-National-bis.pdf',
+// 			english: 'aricles/Towns_Territories/ANG-La-vie-habillee-en-robe-rouge-National-.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/shani_camillemaurice.jpg',
+// 		articles: {
+// 			english: 'articles/Camille_Maurice/ANG-camille-maurice.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/logo-jdp-bourgogne.jpg',
+// 		articles: {
+// 			french: 'articles/journal_du_palais/journal-du-palais.pdf',
+// 			english: 'articles/journal_du_palais/ANGL-Journal-du-Palais.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/logo-VoixduNord.png',
+// 		articles: {
+// 			french: 'articles/La_Voix_du_Nord/FR-Ladies-Circle-oct-07.pdf',
+// 			english: 'articles/La_Voix_du_Nord/ANG-Ladies-Circle-oct-07-.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/eqarts.jpg',
+// 		articles: {
+// 			french: 'articles/Equarts/FR-Verodalla-Equarts.pdf',
+// 			english: 'articles/Equarts/ANG-Verodalla-Equarts.pdf'
+// 		}
+// 	},
+// 	{
+// 		path: 'images/press/France Bleue Borurgogne.jpg',
+// 	},	
+// 	{
+// 		path: 'images/press/French Morning.png',
+// 		articles: {
+// 			french: 'articles/French_Morning/FR-Expo-french-morning-june12.pdf',
+// 			english: 'articles/French_Morning/ANG-Expo-french-morning-june12-copy.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/High End.jpg',
+// 		articles: {
+// 			english: 'articles/High_end_Weekly/ANG-Meet-Veronique-Dalla-FaveraVyna.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/Land of .jpg',
+// 		articles: {
+// 			french: 'articles/Land_of_compassion/FR-VeroDallaterre-de-compassionjuin-12.pdf',
+// 			english: 'articles/Land_of_compassion/ANG-Land-of-compassion.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/Le Point NY.jpg',
+// 		articles: {
+// 			french: 'articles/Le_point/FR-le-point1-1.pdf'
+
+// 		}
+// 	},	
+
+// 	{
+// 		path: 'images/press/NBC4NewYork.jpg',
+// 		articles: {
+// 			french: '',
+// 			english: ''
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/TV Net Bourgogne.jpg',
+// 		articles: {
+// 			french: 'articles/TV_Net_Bourgogne/FR-interview-TVnet-bourgogne.pdf',
+// 			english: 'articles/TV_Net_Bourgogne/ANG-interview-TVnet-bourgogne.pdf'
+// 		}
+// 	},	
+// 	{
+// 		path: 'images/press/Ubifrance.jpg',
+// 		articles: {
+// 			french: 'articles/UbiFrance/FR-Success-Story-Ubifrance-Internationale-2011.pdf',
+// 			english: 'articles/UbiFrance/ANG-Success-Story-Ubifrance-Internationale-2011.pdf'
+// 		}
+// 	},
+// 	{	
+// 		path: 'images/press/le-journal-de-saone-et-loire.jpg',
+// 		articles: {
+// 			french: 'articles/Journal_de_Saone_et_Loire/FR-2008-juin-copy.jpg',
+// 			english: 'articles/Journal_de_Saone_et_Loire/ANG-Saone-et-Loire.pdf'
+// 		}
+// 	},
+// 	{
+// 		path: 'images/press/logo-Observateur-Avesnois.gif',
+// 		articles: {
+// 			french: '',
+// 			english: ''
+// 		}
+// 	}
+// ]
 
 
+// for (var detail in pressDetails) {
+//  	Galleries.update({name: 'Press'}, {$push:{photos: pressDetails[detail]}});
+// }
 
 // var paintingsDetails = [{
 // name: "Coquelicots au Vent Blanc",
@@ -110,7 +259,7 @@
 // materials: 'Mineral paste and acrylic on canvas',
 // dimensions:'15"x15"',
 // year: '2008',
-// path:'images/poppies/Coquelicots en blé.jpg'
+// path:'images/poppies/Coquelicots en ble.jpg'
 // },
 
 // {
@@ -281,8 +430,9 @@
 	
 // 		Galleries.update({cover_photo: {$regex: name}}, {$push:{photos: photo}});
 			
-	
-	
+
+
+
 	
 // }
 
@@ -293,7 +443,10 @@
 // }
 
 
-// Galleries.update({name:'Poppies'}, {$set:{style: 'background:url(images/poppies.jpg) no-repeat center center; width:200px; height:200px; background-size: 132% 132%;'}});
+
+
+
+// Galleries.update({name:'Poppies'}, {$set:{style: 'background:url("images/poppies/Detail coquelicot au vent rouge.JPG") no-repeat center center; width:200px; height:200px; background-size: 132% 132%;'}});
 
 // Galleries.update({name:'Press'}, {$set:{style: 'background: url(images/press.jpg) no-repeat center 0%; width:200px; height:200px; background-size: cover;'}})
 
