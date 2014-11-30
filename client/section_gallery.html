@@ -1,0 +1,55 @@
+<template name="section_gallery">
+{{#if isPhotoSelected}}
+  {{> modal}}
+{{/if}}
+
+<div class="section_container">
+  <h1 class="section_title {{grabTitle}}">«{{grabTitle}}»</h1>
+  <!-- Recent Exhibits -->
+    {{#if grabSubGalleries}}
+      {{#each grabSubGalleries}}
+        <div class='desc new_exhibits'>
+          <h3>{{{name}}}</h3>
+          <h6>{{{date}}}</h6>
+          <h6>{{{location}}}</h6>
+        </div>
+        <div class="sub-gallery new_exhibits">
+          {{#each photos}}  
+            <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;">{{>info}}</div>
+          {{/each}}
+        </div> <!--/ sub-gallery -->
+      {{/each}}
+
+    {{else}}
+	    
+      <!--  -->
+      <div class='desc {{grabTitle}}'>{{{grabDesc}}}</div>
+      <div class="sub-gallery {{grabTitle}}">
+      {{#if isPress}}
+          {{#each grabPhotos}}  
+            <div class="press-wrapper">
+              <img data-path="{{this.path}}" src="{{this.path}}">
+              {{#if this.articles.french}}
+              <a class="french flag" href="{{this.articles.french}}" download><div class="french"></div></a>
+              {{/if}}  
+
+              {{#if this.articles.english}}    
+              <a class="english flag" href="{{this.articles.english}}" download> <div class="english"> </div></a>
+              {{/if}}
+             
+            </div>
+            {{>info}}
+          {{/each}}
+       {{else}}
+		    {{#each grabPhotos}}	
+          <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;{{this.style}}">{{>info}}</div>
+		    {{/each}}
+      {{/if}}
+      </div>
+
+
+    {{/if}}
+</div>
+<div class="arrow-return up small bottom-right"></div>
+{{> footer}}
+</template>

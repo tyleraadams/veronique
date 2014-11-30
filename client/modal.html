@@ -1,0 +1,31 @@
+<template name="modal">
+  <div id="modal">
+
+
+  <button class="closeModal">x</button>
+  <svg data:dir="right" class= "arrow large pos-right white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><polygon points="39.2,28.5 61.1,50.4 39.2,72.3 51.5,50.4"/></svg>
+  <!-- <div class="arrow large pos-right white"></div> -->
+  <figure>
+   <img class="selected-photo" data-path="{{getSelectedPhoto.path}}" src="{{getSelectedPhoto.path}}">
+    <figcaption>
+    {{#if getSelectedPhoto.name}}
+    {{getSelectedPhoto.name}}<br>
+    {{/if}}    
+    {{#if getSelectedPhoto.materials}}
+    {{getSelectedPhoto.materials}}<br>
+    {{/if}}  
+    {{#if getSelectedPhoto.dimensions}}
+    {{getSelectedPhoto.dimensions}}<br>
+    {{/if}}    
+    {{#if getSelectedPhoto.year}}
+    {{getSelectedPhoto.year}}
+  
+    {{/if}}
+    </figcaption>
+  </figure>
+
+     <svg data:dir="left" class= "arrow left large pos-left white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><polygon points="39.2,28.5 61.1,50.4 39.2,72.3 51.5,50.4"/></svg>
+    
+
+  </div>
+</template>

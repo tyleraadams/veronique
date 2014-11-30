@@ -1,0 +1,19 @@
+<template name="nav">
+  	<nav>
+    	<div class="logo"> </div>
+    	<div class="social_media">
+        <a href="http://twitter.com/verodalla" target="_blank">
+        	<div class="twitter"></div></a>
+          <a href="http://facebook.com/verodalla" target="_blank">
+        	<div class="facebook"></div></a>
+          <a href="http://instagram.com/verodalla_artist" target="_blank">
+          <div class="instagram"></div></a>          
+          <a>
+        	<div class="contact"></div></a>
+    	</div>
+
+      {{#if isContactOpen}}
+        {{>contact}}
+      {{/if}}
+	 </nav>
+</template>

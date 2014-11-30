@@ -1,0 +1,10 @@
+Your app must be running, so start up your Meteor server.
+
+In a terminal window, enter: mongodump -h 127.0.0.1 --port 3001 -d meteor
+
+
+# get meteor db url, username, and password
+meteor mongo --url myapp.meteor.com
+
+# -h = host, -d = database name (app domain), -p = password, folder = the path to the dumped db
+mongorestore -u client -h c0.meteor.m0.mongolayer.com:27017 -d myapp_meteor_com -p 'password' folder/

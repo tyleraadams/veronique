@@ -13,6 +13,7 @@ Template.main_gallery.helpers({
 });
 
 Template.main_gallery.rendered = function() {
+  GAnalytics.pageview();
   Session.set("section", null);
   Session.set('sectionObj', null);
 
@@ -48,7 +49,7 @@ Template.main_gallery.rendered = function() {
 }
 
 Template.main_gallery.events({
-  'click a': function(e) {
+  'click a, tap a': function(e) {
     Session.set("section", $(e.target).parent().attr('data-name'));
     var section = Session.get('section');
     var galleries = Session.get('galleries');
@@ -56,12 +57,11 @@ Template.main_gallery.events({
     
     if ($('.section_container')) {
       $('html,body').animate({
-    scrollTop: $('.section_container').offset().top
-    }, 500);
+        scrollTop: $('.section_container').offset().top
+      }, 500);
     }
       
-    // var height = $(document).height();
-   // $('#footer').css('bottom', -height);
+
   },
 
   'mouseover a': function(e) {
