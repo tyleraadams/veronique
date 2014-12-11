@@ -381,14 +381,14 @@ a {
 
 .arrow.pos-right {
 	position:absolute;
-	right:-20px;
-	top:20em;
+	right:-5vw;
+	top:35vh;
 }
 
 .arrow.pos-left {
 	position:absolute;
-	left:-20px;
-	top:20em;
+	left:-5vw;
+	top:35vh;
 }
 
 .arrow.white {
