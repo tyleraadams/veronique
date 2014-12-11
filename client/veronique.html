@@ -1,4 +1,4 @@
-<head>
+<!-- <head>
   <title>Verodalla</title>
   <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
 </head>
@@ -7,20 +7,15 @@
   {{> landing}}
   {{> nav}}
   {{> main_gallery}}
-  
 </body>
 
 <template name="landing">
   <div class="splash"> 
-	<div class="splash-cover">
-    <img src="../images/Logo-Verodalla-Noir.png" class="sign"/> 
-    <div class="arrow-return down small bottom-right"></div>
+	  <div class="splash-cover">
+      <img src="../images/Logo-Verodalla-Noir.png" class="sign"/> 
+      <div class="arrow-return down small bottom-right"></div>
+    </div>
   </div>
-
-  </div>
-
-	
-  
 </template>
 
 <template name="nav">
@@ -72,7 +67,7 @@
 
 <div class="section_container">
   <h1 class="section_title {{grabTitle}}">«{{grabTitle}}»</h1>
-  <!-- Recent Exhibits -->
+  Recent Exhibits
     {{#if grabSubGalleries}}
       {{#each grabSubGalleries}}
         <div class='desc new_exhibits'>
@@ -84,12 +79,12 @@
           {{#each photos}}  
             <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;">{{>info}}</div>
           {{/each}}
-        </div> <!--/ sub-gallery -->
+        </div> / sub-gallery 
       {{/each}}
 
     {{else}}
 	    
-      <!--  -->
+    
       <div class='desc {{grabTitle}}'>{{{grabDesc}}}</div>
       <div class="sub-gallery {{grabTitle}}">
       {{#if isPress}}
@@ -155,7 +150,7 @@
 
   <button class="closeModal">x</button>
   <svg data:dir="right" class= "arrow large pos-right white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><polygon points="39.2,28.5 61.1,50.4 39.2,72.3 51.5,50.4"/></svg>
-  <!-- <div class="arrow large pos-right white"></div> -->
+  <div class="arrow large pos-right white"></div> 
   <figure>
    <img class="selected-photo" data-path="{{getSelectedPhoto.path}}" src="{{getSelectedPhoto.path}}">
     <figcaption>
@@ -195,3 +190,4 @@
   </div>
 </template>
 
+ -->

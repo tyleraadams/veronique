@@ -24,3 +24,24 @@
 	float:none !important;
 }
 
+@media only screen and (max-width: 480px) {
+	.desc.About {
+		float: none;
+		width:100% !important;
+		padding:12px;
+		text-align: left;
+		letter-spacing:0;
+	}
+
+	.desc.About p {
+		float: none;
+		width:98%;
+	}
+
+	.sub-gallery.About {
+		float:none;
+		width:100% !important;
+	}
+
+}
+

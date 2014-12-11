@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "GAnalytics": {}
+    },
+    "packages": {
+      "GAnalytics": {
+        "git": "https://github.com/datariot/meteor-ganalytics.git",
+        "tag": "v0.2.0",
+        "commit": "2d5e48d5cc4c2f88edd40c0b2341d378bd4a702b"
+      }
+    }
+  }
+}

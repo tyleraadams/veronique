@@ -17,6 +17,11 @@
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: auto;
+	-webkit-user-select: none;  
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  -o-user-select: none;
+  user-select: none;  
 }
 
 #modal img {
@@ -28,6 +33,7 @@
 	top:50%;
 	position: absolute;
 	margin-top:-15em;
+	text-align: center;
 }
 
 #modal figcaption {

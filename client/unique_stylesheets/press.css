@@ -62,5 +62,32 @@
 }
 
 
+@media only screen and (max-width: 480px) {
+    .sub-gallery.Press {
+    /*width:200px;*/
+
+        width: 100%;
+        -moz-column-count: 1;
+        -moz-column-gap: 0;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0;
+        column-count: 1;
+        column-gap: 0;
+   
+    }
+
+    .sub-gallery.Press img {
+
+        display: block;
+        width: 50% !important;
+        margin-left:auto;
+        margin-right:auto;
+
+}
+
+}
+
+
+
 
 

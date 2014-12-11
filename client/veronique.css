@@ -119,7 +119,7 @@ nav {
 	background: url('../images/inner_journey.jpg') no-repeat center 43%;
 	background-size: contain;
 	width: 100%;
-	height: 500px;
+	height: 100vh;
 
 }
 
@@ -262,6 +262,9 @@ a {
 
 }
 
+#footer a {
+	color:lightblue;
+}
 
 .cover {
 	width:195px;
@@ -378,19 +381,74 @@ a {
 
 .arrow.pos-right {
 	position:absolute;
-	right:-20px;
-	top:20em;
+	right:-5vw;
+	top:35vh;
 }
 
 .arrow.pos-left {
 	position:absolute;
-	left:-20px;
-	top:20em;
+	left:-5vw;
+	top:35vh;
 }
 
 .arrow.white {
 	fill:#fff;
 	color:#fff;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+	img, .gallery_item,.cover,.main_gallery {
+		display:block;
+		width:100% !important;
+		float:none;
+		width:100% !important;
+		margin:12px 0;
+		padding:0;
+		background-size:cover !important;
+
+	}
+
+	.gallery_item{ height:150px !important; }
+	.cover {height:145px !important;}
+	.logo {
+		margin-left:5%;
+		display:block;
+		width:100% !important;
+		margin-top:12px !important;
+
+	}
+	nav {text-align: center}
+
+	.cover>p {
+		bottom:0px;
+
+	}
+
+	.section-photo {
+		float:none;
+		display:block;
+		/*width:100% !important;*/
+		margin-left:auto; margin-right:auto;
+	}
+
+
+	.desc {
+		float:none;
+		width:100%;
+		font-size:1.2em;
+		padding:12px;
+	}
+
+	.section_container {
+		width:100%;
+	}
+
+	.section_title{
+		float:none;
+		text-align: center;
+	}
+
 }
 
 
