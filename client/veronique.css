@@ -263,7 +263,11 @@ a {
 }
 
 #footer a {
-	color:lightblue;
+	color:#F1C40F;
+}
+
+#footer a:hover {
+	color:#E77E23;
 }
 
 .cover {
@@ -418,7 +422,8 @@ a {
 		margin-top:12px !important;
 
 	}
-	nav {text-align: center}
+	
+	nav { text-align: center }
 
 	.cover>p {
 		bottom:0px;

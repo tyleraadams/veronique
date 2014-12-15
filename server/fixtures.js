@@ -41,6 +41,7 @@
 // about.desc = '<p>VeroDalla, born in France in 1970, currently lives and creates in New York City.</p><p>She began her professional career in gastronomy, first as manager then as owner of a Michelin-starred establishment in Nuits St Georges.</p><p>In 2006, VeroDalla had a revelation that art had to be more than her passion: it had to be Her Life. She worked in her private studio to find a way to reflect her experiences.</p><p>In 2007, VeroDalla started to show her work first in Burgundy, then in galleries, exhibits, and French national art shows.</p><p>In 2009 her career took off quickly as her pieces made their way into private collections, in twenty different countries, through exhibitions in Monaco, Lyon, Paris, Venice, Verona, and many more.</p><p>In 2010, selected by a major company for an exhibition in New York, she found herself emotionally drawn to this city and she decided to make it her new home in 2011. One of her first sales in NYC was auctioned by Christie\'s during an art conference organized by the private bank Meeschaert.</p><p>Since her arrival in the New York art world, she has stayed focused on her creations-- she has exhibited more than 15 times, including the creation of a symbol for the fight against cancer.</p>';
 // about.cover_photo = 'images/about.jpg';
 // about.order = 4;
+// about.style = "background: url('images/about.jpg') no-repeat top center; background-size:cover; width:200px; height:200px;"
 
 // galleries.push(about);
 
@@ -198,7 +199,8 @@
 // 		path: 'images/press/TV Net Bourgogne.jpg',
 // 		articles: {
 // 			french: 'articles/TV_Net_Bourgogne/FR-interview-TVnet-bourgogne.pdf',
-// 			english: 'articles/TV_Net_Bourgogne/ANG-interview-TVnet-bourgogne.pdf'
+// 			english: 'articles/TV_Net_Bourgogne/ANG-interview-TVnet-bourgogne.pdf',
+//      video: 'http://www.dailymotion.com/video/xi286o_verodalla-artiste_tv'
 // 		}
 // 	},	
 // 	{

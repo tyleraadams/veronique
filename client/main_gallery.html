@@ -1,17 +1,14 @@
 <template name="main_gallery">
-	  	<div class="main_gallery">
-
-	  	{{#each grabGalleries}}
-         {{#if style}}
-	  		<a><div class='gallery_item' data-name="{{name}}" style="{{style}}">{{>info}}</div> </a>
-
-        {{else}}
-         <a><div class='gallery_item' data-name="{{name}}" style="background:url({{cover_photo}}) no-repeat center center; width:200px; height:200px; background-size:cover">{{>info}}</div> </a>
-         {{/if}}
-
-     	{{/each}}
+  <div class="main_gallery">
+	  {{#each grabGalleries}}
+      {{#if style}}
+	  		<a><div class='gallery_item' data-name="{{name}}" style="{{style}}">{{>info}}</div></a>
+      {{else}}
+        <a><div class='gallery_item' data-name="{{name}}" style="background:url({{cover_photo}}) no-repeat center center; width:200px; height:200px; background-size:cover">{{>info}}</div> </a>
+      {{/if}}
+    {{/each}}
 	</div>
-
+  
   {{#if isSectionOpen}}
     {{> section_gallery}}
   {{else}}
