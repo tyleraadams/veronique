@@ -116,16 +116,17 @@
 // 	{
 // 		path: 'images/press/Dijon Mag.jpg',
 // 		articles: {
-// 			french: 'articles/Dijon_Beaune_Mag/FR-Bienvenue-a-Livenlululand-National-2012.pdf',
-// 			english: 'ANG-Bienvenue-a-Livenlululand-National-2012-copy.pdf'
-// 		}
+// 			french: 'articles/Dijon_Beaune_Mag/Fr-Bienvenue-a-Livenlululand-National-2012.pdf',
+// 			english: 'articles/Dijon_Beaune_Mag/ANG-Bienvenue-a-Livenlululand-National-2012-copy.pdf'
+  	 
+//     }
 // 	},
 
 // 	{
 // 		path: 'images/press/cover T&T.jpg',
 // 		articles: {
-// 			french: 'aricles/Towns_Territories/FR-La-vie-habillee-en-robe-rouge-National-bis.pdf',
-// 			english: 'aricles/Towns_Territories/ANG-La-vie-habillee-en-robe-rouge-National-.pdf'
+// 			french: 'articles/Towns_Territories/FR-La-vie-habillee-en-robe-rouge-National-bis.pdf',
+// 			english: 'articles/Towns_Territories/ANG-La-vie-habillee-en-robe-rouge-National-.pdf'
 // 		}
 // 	},	
 // 	{
