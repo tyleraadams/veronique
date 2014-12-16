@@ -49,8 +49,11 @@ Template.main_gallery.rendered = function() {
 }
 
 Template.main_gallery.events({
-  'click a, touch a': function(e) {
-    console.log('youve touched an a ' + $(e.target).parent().attr('data-name'))
+  'click a, touch a, tap a, tap .cover': function(e) {
+    console.log('youve touched an a ');
+
+    e.stopPropagation();
+    
     Session.set("section", $(e.target).parent().attr('data-name') || $(e.target).parent().find('.gallery_item').attr('data-name'));
     // debugger
     var section = Session.get('section');
