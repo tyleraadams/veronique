@@ -415,6 +415,10 @@ a {
 
 	}
 
+	.main_gallery a {
+		display:block;
+	}
+
 	.gallery_item{ 
 		height:300px !important; 
 		position:relative; 
@@ -448,7 +452,9 @@ a {
 	}
 
 	.section-photo .cover {
-		background:none;
+		/*background:none;*/
+		height:175px !important;
+		top: 375px !important;
 	}
 
 

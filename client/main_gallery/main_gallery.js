@@ -49,18 +49,20 @@ Template.main_gallery.rendered = function() {
 }
 
 Template.main_gallery.events({
-  'click a, touch a, tap a, tap .cover': function(e) {
-    console.log('youve touched an a ');
 
+
+  'fastclick a, click a': function(e) {
+
+    e.preventDefault();
     e.stopPropagation();
-    
+
     Session.set("section", $(e.target).parent().attr('data-name') || $(e.target).parent().find('.gallery_item').attr('data-name'));
-    // debugger
+    
     var section = Session.get('section');
     var galleries = Session.get('galleries');
     for (var gallery in galleries) { if(galleries[gallery].name === section) { Session.set('sectionObj', galleries[gallery]); } }
-    
-    if ($('.section_container')) {
+   
+    if ($('.section_container').length > 0) {
       $('html,body').animate({
         scrollTop: $('.section_container').offset().top
       }, 500);
