@@ -49,7 +49,7 @@ Template.main_gallery.rendered = function() {
 }
 
 Template.main_gallery.events({
-  'click a, tap a': function(e) {
+  'click a, tap .cover': function(e) {
     Session.set("section", $(e.target).parent().attr('data-name'));
     var section = Session.get('section');
     var galleries = Session.get('galleries');

@@ -402,11 +402,13 @@ a {
 
 
 @media only screen and (max-device-width: 480px) {
+	.splash, .splash-cover,.social_media { display:none; }
+	div[class*="arrow"] { display:none !important; }
+	.logo { height:20em !important; margin-left:0 !important; }
 	img, .gallery_item,.cover,.main_gallery {
 		display:block;
 		width:100% !important;
 		float:none;
-		width:100% !important;
 		margin:12px 0;
 		padding:0;
 		background-size:cover !important;
