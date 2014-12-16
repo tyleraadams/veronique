@@ -415,8 +415,13 @@ a {
 
 	}
 
-	.gallery_item{ height:150px !important; }
-	.cover {height:145px !important;}
+	.gallery_item{ 
+		height:300px !important; 
+		position:relative; 
+		background-position:0 -100px !important; 
+	}
+
+	.cover { position:absolute; bottom:0; height:auto !important; border:none !important; margin:0;}
 	.logo {
 		margin-left:5%;
 		display:block;
@@ -428,15 +433,22 @@ a {
 	nav { text-align: center }
 
 	.cover>p {
+		font-size:4em !important;
 		bottom:0px;
-
+		/*font-size:24px !important;*/
 	}
 
 	.section-photo {
 		float:none;
 		display:block;
-		/*width:100% !important;*/
+		width:550px !important;
+		height:550px !important;
 		margin-left:auto; margin-right:auto;
+		position:relative;
+	}
+
+	.section-photo .cover {
+		background:none;
 	}
 
 
@@ -447,6 +459,14 @@ a {
 		padding:12px;
 	}
 
+	.desc.new_exhibits {
+		width:100% !important;
+	}
+
+	.desc.new_exhibits h3, .desc.new_exhibits h6 {
+		font-size:1.6666em;
+	}
+
 	.section_container {
 		width:100%;
 	}
@@ -454,6 +474,10 @@ a {
 	.section_title{
 		float:none;
 		text-align: center;
+	}
+
+	#footer {
+		font-size:3em;
 	}
 
 }

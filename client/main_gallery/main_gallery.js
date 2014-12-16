@@ -49,8 +49,10 @@ Template.main_gallery.rendered = function() {
 }
 
 Template.main_gallery.events({
-  'click a, tap .cover': function(e) {
-    Session.set("section", $(e.target).parent().attr('data-name'));
+  'click a, touch a': function(e) {
+    console.log('youve touched an a ' + $(e.target).parent().attr('data-name'))
+    Session.set("section", $(e.target).parent().attr('data-name') || $(e.target).parent().find('.gallery_item').attr('data-name'));
+    // debugger
     var section = Session.get('section');
     var galleries = Session.get('galleries');
     for (var gallery in galleries) { if(galleries[gallery].name === section) { Session.set('sectionObj', galleries[gallery]); } }

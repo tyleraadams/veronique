@@ -198,9 +198,9 @@
 // 	{
 // 		path: 'images/press/TV Net Bourgogne.jpg',
 // 		articles: {
-// 			french: 'articles/TV_Net_Bourgogne/FR-interview-TVnet-bourgogne.pdf',
-// 			english: 'articles/TV_Net_Bourgogne/ANG-interview-TVnet-bourgogne.pdf',
-//      video: 'http://www.dailymotion.com/video/xi286o_verodalla-artiste_tv'
+// 			french: 'http://www.dailymotion.com/video/xi286o_verodalla-artiste_tv',
+// 			english: 'articles/TV_Net_Bourgogne/ANG-interview-TVnet-bourgogne.pdf'
+   
 // 		}
 // 	},	
 // 	{

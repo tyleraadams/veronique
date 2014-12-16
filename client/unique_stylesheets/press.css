@@ -62,7 +62,10 @@
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-device-width: 480px) {
+    .section_title.Press {
+        font-size:5em;
+    }
     .sub-gallery.Press {
     /*width:200px;*/
 
