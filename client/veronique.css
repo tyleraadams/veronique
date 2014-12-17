@@ -402,9 +402,15 @@ a {
 
 
 @media only screen and (max-device-width: 480px) {
+
+	body { font-size:medium !important; }
+	
 	.splash, .splash-cover,.social_media { display:none; }
+	
 	div[class*="arrow"] { display:none !important; }
+
 	.logo { height:20em !important; margin-left:0 !important; }
+
 	img, .gallery_item,.cover,.main_gallery {
 		display:block;
 		width:100% !important;
@@ -413,6 +419,29 @@ a {
 		padding:0;
 		background-size:cover !important;
 
+	}
+
+	div[data-name="Poppies"] {
+		background-position: 0px -350px !important;
+	}		
+
+	div[data-name="Inner Journey"] {
+		background-position: 0 -20px !important;	
+	}	
+
+	div[data-name="Press"] {
+		background-position: -26px 15px !important;
+	}	
+
+	div[data-name="Recent Exhibitions"] {
+		background-position: 0 -180px !important;
+	}
+	div[data-name="About"] {
+		background-position: 0 -213px !important;
+	}	
+
+	div[data-name="LivenLuLu"] {
+		background-position: 0 -32px !important;
 	}
 
 	.main_gallery a {
@@ -425,7 +454,14 @@ a {
 		background-position:0 -100px !important; 
 	}
 
-	.cover { position:absolute; bottom:0; height:auto !important; border:none !important; margin:0;}
+	.cover { 
+		position:absolute; 
+		bottom:0; 
+		height:auto !important; 
+		border:none !important; 
+		margin:0;
+	}
+
 	.logo {
 		margin-left:5%;
 		display:block;
@@ -439,7 +475,8 @@ a {
 	.cover>p {
 		font-size:4em !important;
 		bottom:0px;
-		/*font-size:24px !important;*/
+		
+		
 	}
 
 	.section-photo {
@@ -447,26 +484,36 @@ a {
 		display:block;
 		width:550px !important;
 		height:550px !important;
-		margin-left:auto; margin-right:auto;
+		margin-left:auto; 
+		margin-right:auto;
 		position:relative;
+		margin-top:250px;
 	}
 
 	.section-photo .cover {
-		/*background:none;*/
+		background:none;
+		padding-top:12px;
+		top:initial;
 		height:175px !important;
-		top: 375px !important;
+		bottom: -187px !important;
+		display:block;
+		color:#76666a;
 	}
 
 
 	.desc {
 		float:none;
-		width:100%;
-		font-size:1.2em;
-		padding:12px;
+		width:90%;
+		font-size:2.5em;	
+		padding-left:32px;
 	}
 
+
+
+
 	.desc.new_exhibits {
-		width:100% !important;
+		width:90% !important;
+		padding-left:32px;
 	}
 
 	.desc.new_exhibits h3, .desc.new_exhibits h6 {

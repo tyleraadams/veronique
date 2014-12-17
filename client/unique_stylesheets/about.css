@@ -27,15 +27,13 @@
 @media only screen and (max-device-width: 480px) {
 	.desc.About {
 		float: none;
-		width:100% !important;
-		padding:12px;
+		width:90% !important;
 		text-align: left;
 		letter-spacing:0;
 	}
 
-	.desc.About p {
-		float: none;
-		width:98%;
+	.desc.About p  {
+		float: none;		
 	}
 
 	.sub-gallery.About {
