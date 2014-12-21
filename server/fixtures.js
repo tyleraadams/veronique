@@ -46,8 +46,8 @@
 // galleries.push(about);
 
 // exhibitions.name = 'Recent Exhibitions';
-// exhibitions.sub_galleries = [ {name:"Me and Them&#8230;Deeper" , date:'May - June 2014' , location: 'The Broome Hotel, Soho, New York, NY',photos: [{path:'images/exhibit/1 Me and Them Deeper/DSC_5633.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5644.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5648.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5656.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5659.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5754.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5760.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5765.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5798.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5840.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5848.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5869.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5887.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5898.JPG'},{path:'images/exhibit/1 Me and Them Deeper/DSC_5904.JPG'}]},  
-// {name:"Gallery 32 Fine Art" , date:'June 2013' , location: 'Chelsea, New York, NY',photos:[{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3200.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3208.jpg'}, {path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3210.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3222.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3225.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3226.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3228.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3277.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3286.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3377.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3379.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/DSC_3399.jpg'}] }]
+// exhibitions.sub_galleries = [ {name:"Me and Them&#8230;Deeper" , date:'May - June 2014' , location: 'The Broome Hotel, Soho, New York, NY',photos: [{path:'images/exhibit/1 Me and Them Deeper/dsc_5633.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5644.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5648.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5656.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5659.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5754.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5760.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5765.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5798.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5840.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5848.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5869.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5887.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5898.jpg'},{path:'images/exhibit/1 Me and Them Deeper/dsc_5904.jpg'}]},  
+// {name:"Gallery 32 Fine Art" , date:'June 2013' , location: 'Chelsea, New York, NY',photos:[{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3200.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3208.jpg'}, {path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3210.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3222.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3225.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3226.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3228.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3277.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3286.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3377.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3379.jpg'},{path:'images/exhibit/2 Chelsea Ozaneaux Gallery/dsc_3399.jpg'}] }]
 
 // exhibitions.cover_photo = 'images/exhibits.png';
 // exhibitions.order = 5;
@@ -67,14 +67,17 @@
 // }
 
 // var photoDefault = function(path, obj) {
-	 
 // 	this.name = typeof obj !== 'undefined' ? obj.name : null;
 // 	this.materials= typeof obj !== 'undefined' ? obj.materials :  null;
 // 	this.dimensions = typeof obj !== 'undefined' ? obj.dimensions : null;
 // 	this.year = typeof obj !== 'undefined' ? obj.year : null;
-// 	this.path = path;
+//   this.path = path;
+// 	this.thumbnail = typeof obj !== 'undefined' ? obj.thumbnail : null;
 // 	this.style = typeof obj !== 'undefined' ? obj.style : null;
 // };
+
+// console.log('POPPIES world 33333!!');
+
 // var photoList = ['images/about/Copie de VERO NOIRBLA.jpg','images/about/LivenLulu & personnage 6.jpg','images/about/P6050021.JPG','images/about/P6050093.JPG','images/about/P6050220.JPG','images/about/P6050342bis.jpg','images/livenlulu/3AR-42-US.2.jpg','images/livenlulu/3LLL-A20-US.2.jpg','images/livenlulu/3LLL-A23-US.2.jpg','images/livenlulu/3LLL-A26B-US.2.jpg','images/livenlulu/3LLL-A44S.2.jpg','images/livenlulu/3LLL-A50S.2.jpg','images/livenlulu/3LLL-A53S.2.jpg','images/livenlulu/3LLL-A60-US.2.jpg','images/livenlulu/3LLL-A61-US.2.jpg','images/livenlulu/3LLL-AR37-US.2.jpg','images/livenlulu/3LLL-AR37-US.jpg','images/livenlulu/3LLL-AR37B-US.jpg','images/livenlulu/3LLL-AR39-US.jpg','images/livenlulu/3LLL-AR53S.2.jpg','images/livenlulu/3LLL-AR53S.jpg','images/livenlulu/3LLL-AR55S.jpg','images/livenlulu/3LLL-AR60US.2.jpg','images/livenlulu/3LLL-AR61US.2.jpg','images/livenlulu/3LLL-AR62US.jpg','images/livenlulu/3LLL-AR64US.A.jpg','images/livenlulu/3LLL-AR69US.2.jpg','images/livenlulu/3LLL-AR69US.jpg','images/livenlulu/3LLL-AR70US.jpg','images/livenlulu/3LLL-AR71US.2.jpg','images/livenlulu/3LLL-CCD12.jpg','images/livenlulu/3LLL-CCD22S.2.jpg','images/livenlulu/3LLL-CCD24.2.jpg','images/livenlulu/3LLL-CPLE10-US.jpg','images/livenlulu/3LLL-CPLE11.2.jpg','images/livenlulu/3LLL-CPLE12-S.2.jpg','images/livenlulu/3LLL-CPLE12-S.jpg','images/livenlulu/3LLL-CPLE20-US.2.jpg','images/livenlulu/3LLL-CPLE8-US.2jpg','images/livenlulu/3LLL-EXT4-US.B.2.jpg','images/livenlulu/3LLL-EXT5-US.B.2.jpg','images/livenlulu/3LLL-EXT6-US.A.2.jpg','images/livenlulu/3LLL-EXT8-US.B.2.jpg','images/livenlulu/3LLL-V18-US.jpg','images/livenlulu/3LLL-V6B-US.jpg','images/livenlulu/3LLL-V8B-US.jpg','images/livenlulu/3LLLAR59US.2a.jpg','images/livenlulu/3LLLAR59US.B.jpg','images/livenlulu/3LLLAR80US.2.jpg','images/livenlulu/3LLLCCD28US.2.jpg','images/livenlulu/DSC09269.jpg','images/livenlulu/DSC09276.2.jpg','images/livenlulu/DSC09282.2.jpg','images/livenlulu/DSC09308.2.jpg','images/livenlulu/DSC09314.2.jpg','images/livenlulu/DSC09326.2.jpg','images/livenlulu/IMAG0673.2.jpg','images/livenlulu/LivenLulu-&-personnage-2.jpg','images/livenlulu/LivenLulu-&-personnage-3.jpg','images/livenlulu/LivenLulu-&-personnage-4B-3.jpg','images/livenlulu/LivenLulu-&-personnage-5.jpg','images/livenlulu/LivenLulu-16.jpg','images/livenlulu/LivenLulu-18.jpg','images/livenlulu/LivenLulu-19.jpg','images/livenlulu/LivenLulu-20.jpg','images/livenlulu/LivenLulu-21.jpg','images/livenlulu/LivenLulu-22.jpg','images/livenlulu/LivenLulu-23.jpg','images/livenlulu/LivenLulu-24.jpg','images/livenlulu/LivenLulu-25.jpg','images/livenlulu/LivenLulu-27.jpg','images/livenlulu/LivenLulu-28.jpg','images/livenlulu/LivenLulu-8.jpg','images/livenlulu/Univers-Atelier-Liv-30C107.jpg','images/livenlulu/Univers-LivenLulu-1-2.jpg','images/livenlulu/Univers-LivenLulu-4.jpg','images/livenlulu/Univers-LivenLulu-5.jpg','images/livenlulu/Univers-LivenLulu-8.jpg','images/livenlulu/Univers-LivenLulu-9B.jpg','images/livenlulu/Univers-dortoir-LivenLulu.jpg']
 
 
@@ -237,7 +240,8 @@
 // dimensions: '63"x31"x35"',
 // year: '2009',
 // path:'images/poppies/Coquelicot au vent blanc.jpg',
-// style: "background: url('images/poppies/Coquelicot au vent blanc.jpg') no-repeat center 0%;width: 175px;height: 175px; background-size: 150%;"
+// thumbnail: 'images/poppies/thumbnails/coquelicot_au_vent_blanc.jpg',
+// style: "background: url('images/poppies/thumbnails/coquelicot_au_vent_blanc.jpg') no-repeat center 0%;width: 175px;height: 175px; background-size: 150%;"
 // },
 
 // {
@@ -245,8 +249,8 @@
 // materials: 'Mineral paste, metal, acrylic and mixed media',
 // dimensions:'63"x31"x35"',
 // year:'2009',
-// path:'images/poppies/Coquelicot au vent rouge.JPG'
-
+// path:'images/poppies/Coquelicot au vent rouge.JPG',
+// thumbnail: 'images/poppies/thumbnails/coquelicot_au_vent_rouge.jpg'
 // },
 
 // {
@@ -254,33 +258,38 @@
 // materials: 'Mineral paste, metal, acrylic and mixed media',
 // dimensions:'63"x31"x35"',
 // year:'2009',
-// path:'images/poppies/Coquelicots au vent.jpg'
-// }, //not sure about this one
+// path:'images/poppies/Coquelicots au vent.jpg',
+// thumbnail: 'images/poppies/thumbnails/coquelicots_au_vent.jpg'
+// },
 
 // {
 // name: "Coquelicots en Blé",
 // materials: 'Mineral paste and acrylic on canvas',
 // dimensions:'15"x15"',
 // year: '2008',
-// path:'images/poppies/Coquelicots en ble.jpg'
+// path:'images/poppies/Coquelicots en ble.jpg',
+// thumbnail: 'images/poppies/thumbnails/coquelicots_en_ble.jpg'
 // },
 
 // {
 // name: 'Details de Coquelicots au Vent Blanc',
 // materials: 'Mineral paste, metal, acrylic and mixed media',
-// path:'images/poppies/detail coquelicot au vent blanc.JPG'
+// path:'images/poppies/detail coquelicot au vent blanc.JPG',
+// thumbnail: 'images/poppies/thumbnails/detail_coquelicot_au_vent_blanc.jpg'
 // },
 
 // {
 // name: 'Details de Coquelicots au Vent Rouge',
 // materials: 'Mineral paste, metal, acrylic and mixed media',
-// path:'images/poppies/Detail coquelicot au vent rouge.JPG'
+// path:'images/poppies/Detail coquelicot au vent rouge.JPG',
+// thumbnail: 'images/poppies/thumbnails/detail_coquelicot_au_vent_rouge.jpg'
 // },
 
 // {
 // name: 'Details de Coquelicots au Vent Argent',
 // materials: 'Mineral paste, metal, acrylic and mixed media',
-// path:'images/poppies/Detail coquelicots au vent argent.jpg'
+// path:'images/poppies/Detail coquelicots au vent argent.jpg',
+// thumbnail: 'images/poppies/thumbnails/detail_coquelicots_au_vent_argent.jpg'
 // },
 
 // {
@@ -289,7 +298,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // year:'2009',
 // path:'images/poppies/Installation Poppies.jpg',
-// style: 'background: url("images/poppies/Installation Poppies.jpg") no-repeat 69% center;width: 175px;height: 175px;background-size: 320%;'
+// thumbnail: 'images/poppies/thumbnails/installation_poppies.jpg',
+// style: 'background: url("images/poppies/thumbnails/installation_poppies.jpg") no-repeat 69% center;width: 175px;height: 175px;background-size: 100%;'
 // },
 
 // {
@@ -297,7 +307,8 @@
 // materials: 'Mineral paste and acrylic on canvas',
 // dimensions:'39"x70"',
 // year: '2008',
-// path:'images/poppies/Nuage de Coquelicots.JPG'
+// path:'images/poppies/Nuage de Coquelicots.JPG',
+// thumbnail: 'images/poppies/thumbnails/nuage_de_coquelicots.jpg'
 // },
 
 // {
@@ -305,7 +316,8 @@
 // materials: 'Mineral paste and acrylic on canvas',
 // dimensions:'39"x39"',
 // year: '2008',
-// path:'images/poppies/Nuance de Coquelicots.JPG'
+// path:'images/poppies/Nuance de Coquelicots.JPG',
+// thumbnail: 'images/poppies/thumbnails/nuance_de_coquelicots.jpg'
 // },
 
 // {
@@ -313,7 +325,8 @@
 // materials: 'Mineral paste and acrylic on canvas',
 // dimensions:'Triptych 15"x15", 15"x11", 15"x15"',
 // year: '2008',
-// path:'images/poppies/Vent en Coquelicots.jpg'
+// path:'images/poppies/Vent en Coquelicots.jpg',
+// thumbnail: 'images/poppies/thumbnails/vent_en_coquelicots.jpg'
 // },
 
 // {
@@ -321,7 +334,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'54" x 64"',
 // year: '2014',
-// path:'images/inner_journey/IJ 14.jpg'
+// path:'images/inner_journey/IJ 14.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_14.jpg'
 // },
 
 
@@ -331,7 +345,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'49" x 64"',
 // year: '2014',
-// path:'images/inner_journey/IJ 12.jpg'
+// path:'images/inner_journey/IJ 12.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_12.jpg'
 // },
 
 // {
@@ -339,7 +354,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'45" x 52"',
 // year: '2014',
-// path:'images/inner_journey/IJ 11.jpg'
+// path:'images/inner_journey/IJ 11.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_11.jpg'
 // },
 
 // {
@@ -347,7 +363,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'42" x 47"',
 // year: '2014',
-// path:'images/inner_journey/IJ 10.jpg'
+// path:'images/inner_journey/IJ 10.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_10.jpg'
 // },
 
 // {
@@ -355,7 +372,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'Triptych 3 x 55" x 19"',
 // year: '2012',
-// path:'images/inner_journey/IJ 9.jpg'
+// path:'images/inner_journey/IJ 9.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_9.jpg'
 // },
 
 // {
@@ -363,7 +381,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'Diptych 2 x 39" x 27"',
 // year:'2011 - sold',
-// path:'images/inner_journey/IJ 8.jpg'
+// path:'images/inner_journey/IJ 8.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_8.jpg'
 // },
 
 // {
@@ -371,7 +390,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'15" x 15"',
 // year:'2011',
-// path:'images/inner_journey/IJ 7.jpg'
+// path:'images/inner_journey/IJ 7.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_7.jpg'
 // },
 
 // {
@@ -379,7 +399,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'15" x 15"',
 // year:'2011',
-// path:'images/inner_journey/IJ 6.jpg'
+// path:'images/inner_journey/IJ 6.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_6.jpg'
 // },
 
 // {
@@ -387,7 +408,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'15" x 15"',
 // year:'2011 – Sold',
-// path:'images/inner_journey/IJ 5.jpg'
+// path:'images/inner_journey/IJ 5.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_5.jpg'
 // },
 
 
@@ -396,7 +418,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'Triptych 3 x 39"x 12"',
 // year:'2011',
-// path:'images/inner_journey/IJ 4.jpg'
+// path:'images/inner_journey/IJ 4.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_4.jpg'
 // },
 
 // {
@@ -404,7 +427,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'39" x 19’',
 // year:'2011 - sold',
-// path:'images/inner_journey/IJ 3.JPG'
+// path:'images/inner_journey/IJ 3.JPG',
+// thumbnail:'images/inner_journey/thumbnails/ij_3.jpg'
 // },
 
 // {
@@ -412,7 +436,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'15" x 47"',
 // year:'2011 - sold',
-// path:'images/inner_journey/IJ 2.jpg'
+// path:'images/inner_journey/IJ 2.jpg',
+// thumbnail:'images/inner_journey/thumbnails/ij_2.jpg'
 // },
 
 // {
@@ -420,7 +445,8 @@
 // materials: 'Mineral paste, wood and acrylic',
 // dimensions:'39" x 39"',
 // year:'2010 - sold',
-// path:'images/inner_journey/IJ 1.JPG'
+// path:'images/inner_journey/IJ 1.JPG',
+// thumbnail:'images/inner_journey/thumbnails/ij_1.jpg'
 // }];
 
 

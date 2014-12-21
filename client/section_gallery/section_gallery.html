@@ -22,7 +22,7 @@
 
     {{else}}
 	    
-      <!--  -->
+      <!-- Press  -->
       <div class='desc {{grabTitle}}'>{{{grabDesc}}}</div>
       <div class="sub-gallery {{grabTitle}}">
       {{#if isPress}}
@@ -41,8 +41,19 @@
             {{>info}}
           {{/each}}
        {{else}}
-		    {{#each grabPhotos}}	
-          <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;{{this.style}}">{{>info}}</div>
+		    {{#each grabPhotos}}
+
+          {{#if this.thumbnail}}
+            <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.thumbnail}}') no-repeat center center; width:175px; height:175px; background-size:cover;{{this.style}}">
+              {{>info}}
+            </div>
+          {{else}}
+            <div class="section-photo" data-path="{{this.path}}" style="background:url('{{this.path}}') no-repeat center center; width:175px; height:175px; background-size:cover;{{this.style}}">
+              {{>info}}
+            </div>
+          {{/if}}
+              
+       
 		    {{/each}}
       {{/if}}
       </div>
